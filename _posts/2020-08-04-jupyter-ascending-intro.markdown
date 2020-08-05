@@ -3,6 +3,8 @@ layout: post
 title:  "Introducing Jupyter Ascending"
 date:   2020-08-04 13:38:42 -0400
 categories: python ipython ipynb jupyter_ascending
+
+author: TJ DeVries
 ---
 
 # Jupyter Ascending
@@ -39,7 +41,7 @@ was born.
 
 ## Example Usage
 
-![Example]( /assets/img/simple_jupyter_ascending.gif  )
+![Example](/assets/img/simple_jupyter_ascending.gif){: .large-gif }
 
 ## How does it work?
 
@@ -98,4 +100,3 @@ which takes less than 50 lines of code to implement (including configuration).
 
 ---
 
-Author: TJ DeVries, Github: [tjdevries](https://github.com/tjdevries)
