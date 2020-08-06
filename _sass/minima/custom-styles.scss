@@ -4,3 +4,72 @@
     width: 100%;
     padding-left: 0px;
 }
+
+
+
+/**
+ * Dark styling
+ */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: $dark-background-color;
+        color: $dark-text-color;
+    }
+
+    a {
+        color: $dark-link-base-color;
+
+        &:visited {
+            color: $dark-link-visited-color;
+        }
+
+        &:hover {
+            color: $dark-link-hover-color;
+        }
+    }
+    table {
+      color: $dark-table-text-color;
+      border: 1px solid $dark-table-border-color;
+      tr {
+        &:nth-child(even) {
+          background-color: $dark-table-zebra-color;
+        }
+      }
+      th {
+        background-color: $dark-table-header-bg-color;
+        border: 1px solid $dark-table-header-border;
+      }
+      td {
+        border: 1px solid $dark-table-border-color;
+      }
+    }
+    blockquote {
+      color: $dark-brand-color;
+      border-left: 4px solid $dark-border-color-01;
+    }
+    pre,
+    code {
+      border: 1px solid $dark-border-color-01;
+      border-radius: 3px;
+      background-color: $dark-code-background-color;
+    }
+    .highlight {
+      background: $dark-code-background-color;
+
+      .highlighter-rouge & {
+        background: $dark-code-background-color;
+      }
+    }
+    .site-header {
+      border-top: 5px solid $dark-border-color-03;
+      border-bottom: 1px solid $dark-border-color-01;
+    }
+
+    .site-title {
+      &,
+      &:visited {
+        color: $dark-site-title-color;
+      }
+    }
+}
+

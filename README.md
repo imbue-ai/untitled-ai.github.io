@@ -2,6 +2,12 @@
 
 Follow the steps listed at: https://jekyllrb.com/docs/installation/
 
+Then run 
+
+```bash
+$ bundle install
+```
+
 # Build
 
 Follow the steps at: https://jekyllrb.com/docs/

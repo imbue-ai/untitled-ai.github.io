@@ -33,7 +33,7 @@ plugins:
   - jekyll-feed
 
 minima:
-    skin: dark
+    skin: auto
 
 defaults:
     - scope:
