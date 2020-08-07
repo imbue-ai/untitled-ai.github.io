@@ -35,6 +35,10 @@ plugins:
 minima:
     skin: auto
 
+header_pages:
+
+show_excerpts: true
+
 defaults:
     - scope:
         path: "assets/img"

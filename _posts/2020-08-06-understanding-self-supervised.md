@@ -10,9 +10,7 @@ author:
 - Josh Albrecht
 ---
 
-# Summary
-
-In this post, we review a few state of the art approaches to self-supervised learning (SimCLR, MoCo, and BYOL) and highlight a surprising finding from our own research: that **batch normalization can cause contrastive learning**. This serves to unify all of these algorithms as alternative approaches to contrastive learning.
+In this post, we review a few state of the art approaches to self-supervised learning (SimCLR, MoCo, and BYOL) and highlight a surprising finding from our own research: that **batch normalization can cause contrastive learning**. This serves to unify all of these algorithms as alternative approaches to contrastive learning. The code used for this blog post can be found at [https://github.com/untitled-ai/self_supervised](https://github.com/untitled-ai/self_supervised).
 
 # What is self-supervised learning?
 
@@ -36,7 +34,7 @@ At first glance, it appears that BYOL is learning without explicitly contrasting
 
 ### SimCLR
 
-SimCLR is a particularly simple self supervised algorithm. Two [augmentations](https://www.notion.so/Blog-Post-Understanding-the-state-of-the-art-in-self-supervised-learning-1fe76be59f184ebeaa7ec63f602ef386#519cbff8227c4638be369af6a7e91fdc) *v* and *v'* of the same image *x* are fed through the same network to produce two projections *z* and *z'*. The contrastive loss aims to maximize the similarity of the two projections from the same input *x*, while minimizing the similarity to projections of other images within the same minibatch. The multilayer perceptron (MLP) used for projection in SimCLR uses batch norm after each linear layer. (See the appendix for a table that shows the notation used in each of the papers. In this post we use the notation from BYOL for consistency.)
+SimCLR is a particularly simple self supervised algorithm. Two augmentations *v* and *v'* of the same image *x* are fed through the same network to produce two projections *z* and *z'*. The contrastive loss aims to maximize the similarity of the two projections from the same input *x*, while minimizing the similarity to projections of other images within the same minibatch. The multilayer perceptron (MLP) used for projection in SimCLR uses batch norm after each linear layer. (See [the appendix](#appendix) for a table that shows the notation used in each of the papers. In this post we use the notation from BYOL for consistency. We also provide details of the applied augmentations there.)
 
 {% include image.html 
 url="/assets/img/understanding_self_supervised/Screen_Shot_2020-07-15_at_4.39.44_PM.png" 
@@ -98,7 +96,17 @@ We then wanted to find whether another type of normalization would have the same
 
 Next, we wanted to know whether batch normalization is required in the projection MLP $g$, the prediction MLP $q$, or both. Our experiments show that batch norm is most useful in the projection MLP, but the network can learn useful representations with batch normalization in either MLP. A **single batch norm layer** in one of the MLPs is sufficient for the network to learn.
 
-[Performance of experiments for comparison](https://www.notion.so/2785d60fa500433f8db14b286cdba8bf)
+## Performance of experiments for comparison
+
+| Name               | Projection MLP Norm | Prediction MLP Norm | Loss Function | Contrastive | Performance |
+| ------------------ | ------------------- | ------------------- | ------------- | ----------- | ----------- |
+| Contrastive Loss   | None                | None                | Cross Entropy | Explicit    | 44.1        |
+| BYOL               | Batch Norm          | Batch Norm          | L2            | Implicit    | 57.7        |
+| Projection BN Only | Batch Norm          | None                | L2            | Implicit    | 55.3        |
+| Prediction BN Only | None                | Batch Norm          | L2            | Implicit    | 48          |
+| No Normalization   | None                | None                | L2            | None        | 28.3        |
+| Layer Norm         | Layer Norm          | Layer Norm          | L2            | None        | 29.4        |
+| Random             | —                   | —                   | —             | None        | 28.8        |
 
 To summarize the findings so far: there is something about a single batch norm layer related to the activations from other inputs in the minibatch that is necessary for BYOL training to be successful without a contrastive loss function.
 
@@ -137,11 +145,24 @@ Of course, the opposite is an interesting avenue for future work as well. Rather
 
 With the rapid progress self-supervised learning is going through right now, new state of the art algorithms are sure to be published soon. Please share with us any new results you think are relevant to our research here. In addition, if something looks incorrect, or you have questions about our experiments, don't hesitate to reach out and contact us.
 
-# Appendix
+# Acknowledgements
+
+We are thankful for the feedback of our teammates Hristijan Bogoevski, Bartosz Wróblewski, Bryden Fogelman, Timothy 
+Devries, Jason Benn, Kanjun Qiu and Ali Rhode on this post. We also want to thank ....
+
+# <a name="appendix"></a> Appendix
+
+## Terminology Comparison
 
 The BYOL terminology is used throughout this blog post. To compare to other papers, see the below table.
 
-[Terminology Comparison](https://www.notion.so/cab0de65036042079f177315b13d2894)
+| Name              | SimCLR                     | MoCo         | BYOL (used here) |
+| ----------------- | -------------------------- | ------------ | ---------------- |
+| Input             | $x$                        | $x$          | $x$              |
+| Views             | $\tilde x_i$, $\tilde x_j$ | $x_q$, $x_k$ | $v$, $v^\prime$  |
+| Embeddings        | $h_i$, $h_j$               |              | $y$, $y^\prime$  |
+| Online Projection | $z_i$, $z_j$               | $q$          | $z$              |
+| Target Projection |                            | $k$          | $z^\prime$       |
 
 ## Applied Augmentations
 
