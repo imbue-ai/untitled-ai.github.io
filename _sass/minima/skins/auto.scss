@@ -6,8 +6,8 @@ $base-font-family: $sans-serif;
 $base-font-weight: 400;
 $base-font-weight-bold: 700;
 
-$base-font-size: 16px;
-$base-line-height: 1.8;
+$base-font-size: 17px;
+$base-line-height: 1.7;
 
 $brand-color:           #828282 !default;
 $brand-color-light:     lighten($brand-color, 40%) !default;
@@ -20,8 +20,8 @@ $background-color:      #fdfdfd !default;
 $code-background-color: #faf9f9 !default;
 
 $link-base-color:       #2a7ae2 !default;
-$link-visited-color:    darken($link-base-color, 15%) !default;
-$link-hover-color:      $text-color !default;
+$link-visited-color:    $link-base-color !default;
+$link-hover-color:      lighten($text-color, 40%) !default;
 
 $border-color-01:       $brand-color-light !default;
 $border-color-02:       lighten($brand-color, 35%) !default;
@@ -46,7 +46,7 @@ $dark-code-background-color: #212121 !default;
 
 $dark-link-base-color:       #79b8ff !default;
 $dark-link-visited-color:    $dark-link-base-color !default;
-$dark-link-hover-color:      $dark-text-color !default;
+$dark-link-hover-color:      lighten($dark-text-color, 50%) !default;
 
 $dark-border-color-01:       $dark-brand-color-dark !default;
 $dark-border-color-02:       $dark-brand-color-light !default;

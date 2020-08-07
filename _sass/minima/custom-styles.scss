@@ -7,6 +7,16 @@ body {
   line-height: $base-line-height;
 }
 
+
+.site-title {
+  font-family: $serif;
+  &,
+  &:visited,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 html {
   font-size: $base-font-size;
 }
@@ -58,6 +68,28 @@ h6 {
 
 .highlighter-rouge {
   font-size: $base-font-size * 0.8;
+}
+
+
+a {
+  transition: color .2s linear;
+  text-decoration: none;
+  &,
+  &:visited,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+p {
+  a {
+    text-decoration: underline;
+    &,
+    &:visited,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 

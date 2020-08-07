@@ -31,6 +31,7 @@ github_username:  untitled-ai
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 minima:
     skin: auto
