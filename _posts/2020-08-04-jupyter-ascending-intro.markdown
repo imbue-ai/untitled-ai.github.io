@@ -18,11 +18,11 @@ visualizations, plots and interactive widgets within the terminal (and neither
 should there be!).
 
 However, I do not like the Jupyter Notebook editor. It doesn't have my
-shortcuts, I don't want to learn a bunchy of new navigation shortcuts (which I
+shortcuts, I don't want to learn a bunch of new navigation shortcuts (which I
 realize is ironic, given that I use vim...), and I don't want to keep typing
 `:wq!` to save, but accidentally sending it to the notebook.
 
-Even if you're note using a terminal based text editor, I have found that the
+Even if you're not using a terminal based text editor, I have found that the
 Jupyter Notebook extensions for various editors often do not behave _exactly_
 like the original web browser version. Not only that, but I have experienced
 many crashes while using these extensions.
@@ -94,8 +94,8 @@ you can find at
 [jupyter_ascening.vim](https://github.com/untitled-ai/jupyter_ascending.vim)
 which takes less than 50 lines of code to implement (including configuration).
 
-
-
+Additionally, we have a plugin for pycharm as well that can be found at 
+[jupyter_ascending.pycharm](https://github.com/untitled-ai/jupyter_ascending.pycharm)
 
 
 ---
