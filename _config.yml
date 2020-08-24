@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Untitled AI
+title: untitled blog
 # email: 
 description: >- # this means to ignore newlines until "baseurl:"
   A blog about insights in ML, Python, and more! 
@@ -26,6 +26,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  untitled-ai
+permalink: /:year/:title:output_ext
 
 # Build settings
 theme: minima

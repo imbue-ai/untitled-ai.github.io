@@ -102,6 +102,11 @@ p {
 .large-image {
     width: 100%;
     padding-left: 0px;
+    padding-right: 0px;
+    figcaption {
+      margin-top: 5px;
+      color: $brand-color;
+    }
 }
 
 .med-image {
@@ -111,6 +116,7 @@ p {
     margin-right: auto;
     figcaption {
       margin-top: 5px;
+      color: $brand-color;
     }
 }
 
@@ -180,6 +186,18 @@ p {
       &:visited {
         color: $dark-site-title-color;
       }
+    }
+
+    .large-image {
+        figcaption {
+          color: $dark-brand-color;
+        }
+    }
+
+    .med-image {
+        figcaption {
+          color: $dark-brand-color;
+        }
     }
 }
 
