@@ -4,7 +4,6 @@ title:  "Understanding self-supervised and contrastive learning with \"Bootstrap
 date:   2020-08-04 13:38:42 -0400
 category: machine-learning
 tags: self-supervised machine-learning contrastive byol batch-norm
-permalink: /2020//understanding-self-supervised-contrastive-learning.html
 
 author: 
 - Abe Fetterman 
@@ -23,6 +22,8 @@ Unlike prior work in self-supervised learning like SimCLR and MoCo, the recent w
 These findings highlight the importance of contrast between positive and negative examples when learning representations and help us gain a more fundamental understanding of how and why self-supervised learning works.
 
 The code used for this post can be found at [https://github.com/untitled-ai/self_supervised](https://github.com/untitled-ai/self_supervised).
+
+<!--more-->
 
 # Why does self-supervised learning matter?
 

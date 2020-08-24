@@ -21,5 +21,5 @@ $ jekyll build
 To watch and serve in the browser, you can use:
 
 ```bash
-$ bundle exec jekyll serve
+$ bundle exec jekyll serve --drafts
 ```
