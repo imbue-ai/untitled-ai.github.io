@@ -1,4 +1,5 @@
 
+
 body {
   margin: 0 auto;
   font-family: $base-font-family;
@@ -118,6 +119,16 @@ p {
       margin-top: 5px;
       color: $brand-color;
     }
+}
+
+.parent {
+  display: flex;
+  flex-direction:row;
+}
+
+.column {
+  flex: 1 1 0px;
+  padding: 10px;
 }
 
 

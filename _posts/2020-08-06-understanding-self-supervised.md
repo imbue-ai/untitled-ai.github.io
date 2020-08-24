@@ -26,15 +26,15 @@ The code used for this post can be found at [https://github.com/untitled-ai/self
 
 # Why does self-supervised learning matter?
 
-Machine learning is typically done in a *supervised* fashion: we use a dataset consisting of the inputs and "right answers" (outputs) to find the best function that maps from the input data onto the right answers. By contrast, in *self-supervised* [^1]  learning, no right answers are provided in the data set. Instead, we learn a function that maps the input data onto itself (ex: using the right half of an image to predict the left half of an image).
+Machine learning is typically done in a *supervised* fashion: we use a dataset consisting of the inputs and "right answers" (outputs) to find the best function that maps from the input data onto the right answers. By contrast, in *self-supervised* [^ssup]  learning, no right answers are provided in the data set. Instead, we learn a function that maps the input data onto itself (ex: using the right half of an image to predict the left half of an image).
 
-This approach has proven successful in everything from language to images and audio. In fact, most recent language models, from [word2vec](http://jalammar.github.io/illustrated-word2vec/) to [BERT](http://jalammar.github.io/illustrated-bert/) and [GPT-3](https://arxiv.org/abs/2005.14165), are examples of self-supervised approaches. More recently, this approach has had some incredible results for audio and images as well, and [some believe](https://cacm.acm.org/news/244720-yann-lecun-yoshua-bengio-self-supervised-learning-is-key-to-human-level-intelligence/fulltext) that it may be an important component of human-like intelligence. This post focuses on self-supervised learning for image representations. For more background on self-supervised learning, see the resources below [^2].
-
-
-[^1]: *unsupervised* is sometimes used interchangeably with *self-supervised*, though as Yann LeCun points out [here](https://www.facebook.com/722677142/posts/10155934004262143/), the term *unsupervised* is both loaded and confusing.
+This approach has proven successful in everything from language to images and audio. In fact, most recent language models, from [word2vec](http://jalammar.github.io/illustrated-word2vec/) to [BERT](http://jalammar.github.io/illustrated-bert/) and [GPT-3](https://arxiv.org/abs/2005.14165), are examples of self-supervised approaches. More recently, this approach has had some incredible results for audio and images as well, and [some believe](https://cacm.acm.org/news/244720-yann-lecun-yoshua-bengio-self-supervised-learning-is-key-to-human-level-intelligence/fulltext) that it may be an important component of human-like intelligence. This post focuses on self-supervised learning for image representations. For more background on self-supervised learning, see the resources below [^resources].
 
 
-[^2]: for more on self-supervised learning, see DeepMind's [blog post](https://deepmind.com/blog/article/unsupervised-learning), a [practical overview](https://www.fast.ai/2020/01/13/self_supervised/) from FastAI, or [this](https://lilianweng.github.io/lil-log/2019/11/10/self-supervised-learning.html) in-depth post on everything related to self-supervised learning and representation learning. [This GitHub repo](https://github.com/HobbitLong/PyContrast/blob/master/AWESOME_CONTRASTIVE_LEARNING.md) contains many other relevant papers as well.
+[^ssup]: *unsupervised* is sometimes used interchangeably with *self-supervised*, though as Yann LeCun points out [here](https://www.facebook.com/722677142/posts/10155934004262143/), the term *unsupervised* is both loaded and confusing.
+
+
+[^resources]: for more on self-supervised learning, see DeepMind's [blog post](https://deepmind.com/blog/article/unsupervised-learning), a [practical overview](https://www.fast.ai/2020/01/13/self_supervised/) from FastAI, or [this](https://lilianweng.github.io/lil-log/2019/11/10/self-supervised-learning.html) in-depth post on everything related to self-supervised learning and representation learning. [This GitHub repo](https://github.com/HobbitLong/PyContrast/blob/master/AWESOME_CONTRASTIVE_LEARNING.md) contains many other relevant papers as well.
 
 # State of the art in self-supervised learning
 
@@ -102,7 +102,7 @@ By the above description, it appears that BYOL can learn without explicitly cont
 
 We originally implemented BYOL in PyTorch using code we had written for MoCo. When we began training our network, we found that **our network performed no better than random**. Comparing our code to [another available implementation](https://github.com/sthalles/PyTorch-BYOL) (thanks sthalles!), we discovered we were missing batch normalization in the MLP. We were quite surprised that batch normalization was critical to training BYOL, while MoCo v2 did not require it at all.
 
-For our initial testing, we trained a ResNet-18 with BYOL on the STL-10 unsupervised dataset using SGD with momentum and a batch size of 256 [^4]. Below are the first ten epochs of training for the same BYOL algorithm with and without batch normalization in the MLPs
+For our initial testing, we trained a ResNet-18 with BYOL on the STL-10 unsupervised dataset using SGD with momentum and a batch size of 256 [^opt]. Below are the first ten epochs of training for the same BYOL algorithm with and without batch normalization in the MLPs
 
 
 {% include image.html 
@@ -112,7 +112,7 @@ caption="Linear evaluation accuracy on a validation set during early training of
 class="med-image"
 %}
 
-[^4]: The original BYOL implementation uses the LARS optimizer for 1000 epochs, with a batch size of 4096 and a warmup period of 10 epochs. We are currently running experiments to determine whether the optimizer plays a role in the performance change we notice here.
+[^opt]: The original BYOL implementation uses the LARS optimizer for 1000 epochs, with a batch size of 4096 and a warmup period of 10 epochs. We are currently running experiments to determine whether the optimizer plays a role in the performance change we notice here.
 
 
 ### Why did this happen?
@@ -130,7 +130,11 @@ class="large-image"
 
 Because the prediction MLP q changes the network depth compared to MoCo, we wondered if batch normalization might be needed to regularize this network. That is, while MoCo *does not* require batch normalization, it could be that MoCo *does* require batch normalization when paired with an additional prediction MLP. To test this, we started training the network shown above with a contrastive loss function. We found that the network was able to perform significantly better than random within ten epochs. This result made us suspect that something about **not using a contrastive loss function** causes the dependence of training on batch normalization.
 
+We then wondered whether another type of normalization would have the same effect. We applied Layer Normalization to the MLPs instead of batch normalization and trained the network with BYOL. As in the experiments where MLPs had no normalization, the performance was no better than random. This result told us that the activations of other inputs in the same minibatch are essential in helping BYOL find useful representations [^layernorm].
+
 Next, we wanted to know whether batch normalization is required in the projection MLP $g$, the prediction MLP $q$, or both. Our experiments showed that batch normalization is most useful in the projection MLP, but the network can learn useful representations with batch normalization in either MLP. A **single batch normalization layer** in one of the MLPs is sufficient for the network to learn.
+
+[^layernorm]: because the only difference between using layer normalization and batch normalization is that the later is normalized across the other examples in the same minibatch, while the former is independent of other examples.
 
 
 ## Performance for each variation
@@ -149,13 +153,13 @@ To summarize the findings so far: in the absence of a contrastive loss function,
 
 ### Why batch normalization is critical in BYOL: mode collapse
 
-One purpose of negative examples in a contrastive loss function is to prevent mode collapse[^3]. An example of mode collapse would be a network that always outputs [1, 0, 0, 0, ...] as its projection vector *z*. If all projection vectors *z* are the same, then the network only needs to learn the identity function for $q$ in order to achieve perfect prediction accuracy!
+One purpose of negative examples in a contrastive loss function is to prevent mode collapse[^collapse]. An example of mode collapse would be a network that always outputs [1, 0, 0, 0, ...] as its projection vector *z*. If all projection vectors *z* are the same, then the network only needs to learn the identity function for $q$ in order to achieve perfect prediction accuracy!
 
 The importance of batch normalization becomes clearer in this context. If batch normalization is used in the projection layer $g$, the projection output vector *z* cannot collapse to any singular value like [1, 0, 0, 0, ...] because that is exactly what batch normalization prevents. Regardless of how similar the inputs to the batch normalization layer, the outputs will be redistributed according to the learned mean and standard deviation.  **Mode collapse is prevented precisely because all samples in the minibatch cannot take on the same value after batch normalization**. 
 
 Batch normalization causes a similar effect in the prediction MLP. The function $q$ cannot learn the identity function if the minibatch inputs are very similar: the batch normalization will redistribute the activations through vector space so that the final layer predictions are all very different. This function will only be successful at predicting projection vectors z' if those vectors z' are sufficiently well separated in representation space (that is, not collapsed) because the predictions p are constrained to be well separated across the minibatch.
 
-[^3]: *collapsed representations* is used with the same meaning in the BYOL paper (section 3). Other practitioners may identify the phenomenon as *mode collapse*. 
+[^collapse]: *collapsed representations* is used with the same meaning in the BYOL paper (section 3). Other practitioners may identify the phenomenon as *mode collapse*. 
 
 ### Why batch normalization is implicit contrastive learning: all examples are compared to the mode
 
@@ -290,13 +294,24 @@ We found a number of optimization conditions under which networks are able to le
 
 In some cases, weight decay alone can allow the network to exit the collapsed mode. We found that SGD with a learning rate of 0.2 and weight decay of 1e-5 allowed the network to learn representations that were not collapsed, starting at around epoch 100. We occasionally observed some recovery at a higher weight decay of 1e-4, but at lower or higher values for the weight decay coefficient there was no recovery from the mode collapse. The final representation quality was relatively poor, with a linear validation accuracy at epoch 320 of only 56%.
 
-![Blog%20Post%20Understanding%20self-supervised%20and%20contra%20519b5e15bed84100bde2e964654f861b/WB_Chart_8_24_2020_9_55_27_AM.png](Blog%20Post%20Understanding%20self-supervised%20and%20contra%20519b5e15bed84100bde2e964654f861b/WB_Chart_8_24_2020_9_55_27_AM.png)
-
-Representation distance when training with SGD with a learning rate of 0.2 and weight decay of 1e-5. The weight decay allows the network to leave the collapsed state around epoch 100.
-
-![Blog%20Post%20Understanding%20self-supervised%20and%20contra%20519b5e15bed84100bde2e964654f861b/WB_Chart_8_24_2020_10_27_49_AM.png](Blog%20Post%20Understanding%20self-supervised%20and%20contra%20519b5e15bed84100bde2e964654f861b/WB_Chart_8_24_2020_10_27_49_AM.png)
-
-Training loss when training with SGD with a learning rate of 0.2 and weight decay of 1e-5. 
+<div class="parent">
+<div class="column">
+{% include image.html 
+url="/assets/img/understanding_self_supervised/weight_decay_distance.png" 
+alt="Accuracy for ResNet with group norm" 
+caption="Representation distance when training with SGD with a learning rate of 0.2 and weight decay of 1e-5. The weight decay allows the network to leave the collapsed state around epoch 100." 
+class="large-image"
+%}
+</div>
+<div class="column">
+{% include image.html 
+url="/assets/img/understanding_self_supervised/weight_decay_train_loss.png" 
+alt="Accuracy for ResNet with group norm" 
+caption="Training loss when training with SGD with a learning rate of 0.2 and weight decay of 1e-5. " 
+class="large-image"
+%}
+</div>
+</div>
 
 Our understanding is that in learning the collapsed mode, the network quickly sets a small number of weights to relatively high values. As weight decay brings those weights down over time, the variation in inputs starts to produce output variation, leading to an increase in the training loss. The variation introduced in the output allows the network to start learning more useful representations.
 
@@ -304,9 +319,25 @@ Our understanding is that in learning the collapsed mode, the network quickly se
 
 Weight standardization is another technique that we have found may prevent mode collapse during BYOL training. Weight standardization ensures that the weights in a network are normally distributed. Implemented with group normalization, this encourages each layer's output activation to depend on multiple inputs, making the collapsed mode more difficult to learn since there are no large weights or activations. 
 
-![Blog%20Post%20Understanding%20self-supervised%20and%20contra%20519b5e15bed84100bde2e964654f861b/WB_Chart_8_24_2020_10_34_04_AM.png](Blog%20Post%20Understanding%20self-supervised%20and%20contra%20519b5e15bed84100bde2e964654f861b/WB_Chart_8_24_2020_10_34_04_AM.png)
 
-![Blog%20Post%20Understanding%20self-supervised%20and%20contra%20519b5e15bed84100bde2e964654f861b/WB_Chart_8_24_2020_10_34_50_AM.png](Blog%20Post%20Understanding%20self-supervised%20and%20contra%20519b5e15bed84100bde2e964654f861b/WB_Chart_8_24_2020_10_34_50_AM.png)
+<div class="parent">
+<div class="column">
+{% include image.html 
+url="/assets/img/understanding_self_supervised/weight_std_distance.png" 
+alt="Accuracy for ResNet with group norm" 
+caption="" 
+class="large-image"
+%}
+</div>
+<div class="column">
+{% include image.html 
+url="/assets/img/understanding_self_supervised/weight_std_train_loss.png" 
+alt="Accuracy for ResNet with group norm" 
+caption="" 
+class="large-image"
+%}
+</div>
+</div>
 
 In our experiments, a network with weight standardization and group normalization trained with SGD would usually achieve some sort of separated representation within 100 epochs. However, these representations did not have very good performance overall. In the above example, one can see the network repeatedly try to collapse the representation and then recover again. The final linear validation accuracy for this network was just 51%.
 
@@ -320,27 +351,68 @@ where $\eta$ is a trust factor, $w^l$ are the weights of the $l^\mathrm{th}$ lay
 
 We find that that this layerwise rate scaling in LARS disrupts the ability of the network to remain in a state that produces collapsed representations. As the network collapses the representation, the gradient at the early layers starts to vanish. This makes the LARS learning rate there explode. We have demonstrated this with our ResNet-18 with group normalization by applying LARS to only layer1 and layer2 in the ResNet. 
 
-![Blog%20Post%20Understanding%20self-supervised%20and%20contra%20519b5e15bed84100bde2e964654f861b/WB_Chart_8_21_2020_10_53_25_AM.png](Blog%20Post%20Understanding%20self-supervised%20and%20contra%20519b5e15bed84100bde2e964654f861b/WB_Chart_8_21_2020_10_53_25_AM.png)
-
-![Blog%20Post%20Understanding%20self-supervised%20and%20contra%20519b5e15bed84100bde2e964654f861b/WB_Chart_8_21_2020_10_54_58_AM.png](Blog%20Post%20Understanding%20self-supervised%20and%20contra%20519b5e15bed84100bde2e964654f861b/WB_Chart_8_21_2020_10_54_58_AM.png)
-
-![Blog%20Post%20Understanding%20self-supervised%20and%20contra%20519b5e15bed84100bde2e964654f861b/WB_Chart_8_21_2020_10_41_01_AM.png](Blog%20Post%20Understanding%20self-supervised%20and%20contra%20519b5e15bed84100bde2e964654f861b/WB_Chart_8_21_2020_10_41_01_AM.png)
+<div class="parent">
+<div class="column">
+{% include image.html 
+url="/assets/img/understanding_self_supervised/lars_layer12_lr.png" 
+alt="Learning rate for LARS on layer1 and layer2 only" 
+caption="" 
+class="large-image"
+%}
+</div>
+<div class="column">
+{% include image.html 
+url="/assets/img/understanding_self_supervised/lars_layer12_loss.png" 
+alt="Training loss for LARS on layer1 and layer2 only" 
+caption="" 
+class="large-image"
+%}
+</div>
+</div>
 
 It is not just the higher learning rate, but the *gradient dependence* of the learning rate that makes LARS successful in avoiding collapsed representations. Our experiments SGD with a higher learning rate on layers 1 and 2 were not able to learn more useful representations after undergoing mode collapse.
 
 Using LARS on layers 1&2 was most effective at quickly creating separated layers. LARS was somewhat effective at disrupting the training of collapsed representations even if used in just the MLPs. However, in this case the representation usually collapsed again after some time.
 
-![Blog%20Post%20Understanding%20self-supervised%20and%20contra%20519b5e15bed84100bde2e964654f861b/WB_Chart_8_21_2020_11_24_09_AM.png](Blog%20Post%20Understanding%20self-supervised%20and%20contra%20519b5e15bed84100bde2e964654f861b/WB_Chart_8_21_2020_11_24_09_AM.png)
-
-![Blog%20Post%20Understanding%20self-supervised%20and%20contra%20519b5e15bed84100bde2e964654f861b/WB_Chart_8_21_2020_11_24_29_AM.png](Blog%20Post%20Understanding%20self-supervised%20and%20contra%20519b5e15bed84100bde2e964654f861b/WB_Chart_8_21_2020_11_24_29_AM.png)
-
-![Blog%20Post%20Understanding%20self-supervised%20and%20contra%20519b5e15bed84100bde2e964654f861b/WB_Chart_8_21_2020_11_24_20_AM.png](Blog%20Post%20Understanding%20self-supervised%20and%20contra%20519b5e15bed84100bde2e964654f861b/WB_Chart_8_21_2020_11_24_20_AM.png)
+<div class="parent">
+<div class="column">
+{% include image.html 
+url="/assets/img/understanding_self_supervised/lars_mlp_lr.png" 
+alt="Learning rate for LARS on MLPs only" 
+caption="" 
+class="large-image"
+%}
+</div>
+<div class="column">
+{% include image.html 
+url="/assets/img/understanding_self_supervised/lars_mlp_loss.png" 
+alt="Training loss for LARS on MLPs only" 
+caption="" 
+class="large-image"
+%}
+</div>
+</div>
 
 The ability for LARS to disrupt learning of collapsed representations appears to strongly depend on the timing of the learning rate changes. For example, with a base learning rate of 0.5, the learning rate in layer1 peaks in epoch 2, and the network starts to learn useful representations immediately after that. With a base learning rate of 0.1, the learning rate peaks in epoch 9, and the network does not recover from the collapsed representation it has learned.
 
-![Blog%20Post%20Understanding%20self-supervised%20and%20contra%20519b5e15bed84100bde2e964654f861b/WB_Chart_8_21_2020_11_38_04_AM.png](Blog%20Post%20Understanding%20self-supervised%20and%20contra%20519b5e15bed84100bde2e964654f861b/WB_Chart_8_21_2020_11_38_04_AM.png)
-
-![Blog%20Post%20Understanding%20self-supervised%20and%20contra%20519b5e15bed84100bde2e964654f861b/WB_Chart_8_21_2020_11_38_21_AM.png](Blog%20Post%20Understanding%20self-supervised%20and%20contra%20519b5e15bed84100bde2e964654f861b/WB_Chart_8_21_2020_11_38_21_AM.png)
+<div class="parent">
+<div class="column">
+{% include image.html 
+url="/assets/img/understanding_self_supervised/lars_lr.png" 
+alt="Learning rate for LARS on MLPs only" 
+caption="" 
+class="large-image"
+%}
+</div>
+<div class="column">
+{% include image.html 
+url="/assets/img/understanding_self_supervised/lars_loss.png" 
+alt="Representation distance for LARS on MLPs only" 
+caption="" 
+class="large-image"
+%}
+</div>
+</div>
 
 Overall, we find these interactions to be quite fascinating, and consider them to be worthy of a more in-depth study in the future. 
 
@@ -348,5 +420,3 @@ For our present purposes, we have shown that the ability of BYOL to learn useful
 
 
 # Footnotes
-
-[^layer-norm]: because the only difference between using layer normalization and batch normalization is that the later is normalized across the other examples in the same minibatch, while the former is independent of other examples.
