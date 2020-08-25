@@ -5,7 +5,36 @@
 
 @charset "utf-8";
 
+
+$base-font-size:   16px !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+
+$spacing-unit:     30px !default;
+
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
+$table-text-align: left !default;
+
+// Width of the content area
+$content-width:    800px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
 $sans-serif: "Lato", Helvetica, Arial, sans-serif;
+$title-font: 'Nunito', sans-serif;
 $serif: "Cormorant Garamond", Courier, serif;
 $base-font-family: $sans-serif;
 $base-font-weight: 400;
@@ -63,15 +92,23 @@ $dark-table-header-bg-color: lighten($dark-background-color, 10%) !default;
 $dark-table-header-border:   lighten($dark-background-color, 21%) !default;
 $dark-table-border-color:    $dark-border-color-01 !default;
 
-
-@import "minima";
+// Import partials.
+@import
+  "minima/base",
+  "minima/layout"
+;
 
 // Syntax highlighting styles should be adjusted appropriately for every "skin"
 // ----------------------------------------------------------------------------
 
+code {
+  color: $text-color;
+  background-color: $code-background-color;
+}
 
 .highlight {
   color: $text-color;
+  background-color: $code-background-color;
   .c     { color: #998; font-style: italic } // Comment
   .err   { color: #a61717; background-color: #e3d2d2 } // Error
   .k     { font-weight: bold } // Keyword
@@ -135,11 +172,17 @@ $dark-table-border-color:    $dark-border-color-01 !default;
 
 .highlighter-rouge {
   color: #d14;
+  background-color: $code-background-color;
 }
 
 @media (prefers-color-scheme: dark) {
+  code {
+    color: $dark-text-color;
+    background-color: $dark-code-background-color;
+  }
   .highlight {
     color: $dark-text-color;
+    background-color: $dark-code-background-color;
     .c     { color: #545454; font-style: italic } // Comment
     .err   { color: #f07178; background-color: #e3d2d2 } // Error
     .k     { color: #89DDFF; font-weight: bold } // Keyword
@@ -203,6 +246,7 @@ $dark-table-border-color:    $dark-border-color-01 !default;
 
   .highlighter-rouge {
     color: #ec6889;
+    background-color: $dark-code-background-color;
   }
 }
 
@@ -218,11 +262,13 @@ body {
 
 
 .site-title {
-  font-family: $serif;
+  font-family: $title-font;
+  text-decoration: line-through;
+  letter-spacing: 0.05em;
   &,
   &:visited,
   &:hover {
-    text-decoration: none;
+    text-decoration: line-through;
   }
 }
 
@@ -283,16 +329,26 @@ h6 {
 a {
   transition: color .2s linear;
   text-decoration: none;
+  color: $link-base-color;
   &,
   &:visited,
   &:hover {
     text-decoration: none;
+  }
+
+  &,
+  &:visited {
+    color: $link-visited-color;
+  }
+  &:hover {
+    color: $link-hover-color
   }
 }
 
 p {
   a {
     text-decoration: underline;
+    color: $link-base-color;
     &,
     &:visited,
     &:hover {
@@ -329,6 +385,7 @@ p {
     }
 }
 
+
 .parent {
   display: flex;
   flex-direction:row;
@@ -339,7 +396,15 @@ p {
   padding: 10px;
 }
 
-
+@media only screen and (max-width: 600px) {
+  .med-image {
+    width: 100%;
+  }
+  .parent {
+    display: flex;
+    flex-direction:column;
+  }
+}
 
 
 /**
