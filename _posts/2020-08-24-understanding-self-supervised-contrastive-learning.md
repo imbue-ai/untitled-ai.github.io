@@ -75,7 +75,7 @@ class="large-image"
 
 Unlike SimCLR, where the top and bottom row in the diagram represent the same network (parameterized by $\theta$), MoCo splits the single network into an *online network* (top row) parameterized by $\theta$ and a *momentum network* (bottom row) parameterized by $\xi$. The online network is updated by stochastic gradient descent, while the momentum network is updated based on an exponential moving average of the online network weights. The momentum network allows MoCo to efficiently use a memory bank of past projections as negative examples for the contrastive loss. This greatly reduces the need for large batch sizes: SimCLR required a batch size of 4096 for the best performance, while MoCo v2 was trained with a batch size of 256 and achieved even better results. In our dog image illustration, the positive examples would be crops of the same image of a dog. The negative examples are completely different images that were used in past mini-batches, projections of which are stored in the memory bank.
 
-The MLP used for projection in [MoCo v2](http://arxiv.org/abs/2003.04297) does not use batch normal
+The MLP used for projection in [MoCo v2](http://arxiv.org/abs/2003.04297) does not use batch normalization
 
 {% include image.html 
 url="/assets/img/understanding_self_supervised/moco_v2_arch.png" 
