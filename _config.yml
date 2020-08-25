@@ -41,6 +41,7 @@ minima:
 header_pages:
 
 show_excerpts: true
+google_analytics: UA-176291391-1
 
 defaults:
     - scope:
