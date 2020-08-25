@@ -6,13 +6,13 @@ category: machine-learning
 tags: self-supervised machine-learning contrastive byol batch-norm
 
 author: 
-- Abe Fetterman 
-- Josh Albrecht
+- <a href="https://github.com/abefetterman">Abe Fetterman </a> (<a href="mailto:abe@qandabe.com">email</a>)
+- <a href="http://joshalbrecht.com/">Josh Albrecht</a> (<a href="mailto:joshalbrecht@gmail.com">email</a>)
 ---
 
 # Summary
 
-Unlike prior work in self-supervised learning like SimCLR and MoCo, the recent work [Bootstrap Your Own Latent](http://arxiv.org/abs/2006.07733) (BYOL) demonstrates a state of the art method for self-supervised learning of image representations without an explicitly contrastive loss function. BYOL simplifies training by removing the need for negative examples in the loss function. We highlight two surprising findings from our research: 
+Unlike prior work like SimCLR and MoCo, the recent paper [Bootstrap Your Own Latent](http://arxiv.org/abs/2006.07733) (BYOL) from [DeepMind](https://deepmind.com/) demonstrates a state of the art method for self-supervised learning of image representations without an explicitly contrastive loss function. This simplifies training by removing the need for negative examples in the loss function. We highlight two surprising findings from our work on reproducing BYOL: 
 
 
 **(1) BYOL generally performs no better than random when batch normalization is removed, and** 
@@ -214,7 +214,7 @@ The opposite is an interesting avenue for future work as well. Rather than avoid
 
 Finally, we find it fascinating that BYOL can (with the right hyper-parameters) learn something even in the absence of either an explicit contrastive loss or an implicit contrastive mechanism via batch normalization. While we would not recommend that any practitioners use these networks in practice, we think they are a novel and interesting contribution to the field, and that their behaviors potentially provide a valuable glimpse into why some of these techniques (weight decay, weight standardization, and LARS) are so effective.
 
-Given the rapid pace of progress in the field of self-supervised learning right now, new state of the art algorithms will surely be published soon. Please feel free to send us any relevant new results, and if there are any questions about our experiments or this blog post, don't hesitate to reach out!
+Given the rapid pace of progress in the field of self-supervised learning right now, new state of the art algorithms will surely be published soon. Please feel free to send us any relevant new results, and if there are any questions about our experiments or this blog post, don't hesitate to <a href="mailto:joshalbrecht@gmail.com">reach out</a>!
 
 # Thanks!
 

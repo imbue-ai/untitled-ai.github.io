@@ -6,8 +6,8 @@ category: machine-learning
 tags: self-supervised machine-learning contrastive byol batch-norm
 
 author: 
-- Abe Fetterman 
-- Josh Albrecht
+- <a href="https://github.com/abefetterman">Abe Fetterman </a> (<a href="mailto:abe@qandabe.com">email</a>)
+- <a href="http://joshalbrecht.com/">Josh Albrecht</a> (<a href="mailto:joshalbrecht@gmail.com">email</a>)
 ---
 
 # Appendix
