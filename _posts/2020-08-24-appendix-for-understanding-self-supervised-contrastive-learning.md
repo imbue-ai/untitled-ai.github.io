@@ -16,8 +16,7 @@ This post contains the extra data and detail for our post <a href="/understandin
 
 <!--more-->
 
-<a name="appendix-a"></a>
-# Appendix A - Notation
+# <a name="appendix-a"></a> Appendix A - Notation
 The BYOL terminology is used throughout this blog post. To compare to other papers, see the below table.
 
 | Name              | SimCLR                     | MoCo         | BYOL (used here) |
@@ -28,7 +27,7 @@ The BYOL terminology is used throughout this blog post. To compare to other pape
 | Online Projection | $z_i$, $z_j$               | $q$          | $z$              |
 | Target Projection |                            | $k$          | $z^\prime$       |
 
-# Appendix B - Data augmentations
+# <a name="appendix-b"></a> Appendix B - Data augmentations
 
 Using `torchvision.transforms`, with inputs `crop_size=96` and `s=0.5`, the color jitter strength, the transform function for training is:
 
@@ -48,7 +47,7 @@ Compose([
 
 The `GaussianBlur` function applies blur with a radius chosen randomly from the uniform distribution [0.1, 2.0]. See the full code [on github](https://github.com/untitled-ai/self_supervised).
 
-# Appendix C - Deep batch normalization and longer training
+# <a name="appendix-c"></a> Appendix C - Deep batch normalization and longer training
 
 In order to more closely reproduce the experimental setup described in the BYOL paper, we ran some longer experiments and tried different hyperparameters. 
 
