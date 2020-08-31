@@ -103,7 +103,7 @@ By the above description, it appears that BYOL can learn without explicitly cont
 
 We originally implemented BYOL in PyTorch using code we had written for MoCo. When we began training our network, we found that **our network performed no better than random**. Comparing our code to [another available implementation](https://github.com/sthalles/PyTorch-BYOL) (thanks sthalles!), we discovered we were missing batch normalization in the MLP. We were quite surprised that batch normalization was critical to training BYOL, while MoCo v2 did not require it at all.
 
-For our initial testing, we trained a ResNet-18 with BYOL on the STL-10 unsupervised dataset using SGD with momentum and a batch size of 256 [^opt]. See <a href="/appendix-for-understanding-self-supervised-contrastive-learning.html#appendix-b">Appendix B</a> for details on data augmentation. Below are the first ten epochs of training for the same BYOL algorithm with and without batch normalization in the MLPs
+For our initial testing, we trained a ResNet-18 with BYOL on the STL-10 unsupervised dataset using SGD with momentum and a batch size of 256 [^opt]. See <a href="/appendix-for-understanding-self-supervised-contrastive-learning.html#appendix-b">Appendix B</a> for details on data augmentation. Below are the first ten epochs of training for the same BYOL algorithm with and without batch normalization in the MLPs.
 
 
 {% include image.html 
@@ -140,7 +140,7 @@ Next, we wanted to know whether batch normalization is required in the projectio
 
 ### Performance for each variation
 
-| Name               | Projection MLP Norm | Prediction MLP Norm | Loss Function | Contrastive | Performance |
+| Name               | Projection MLP Norm | Prediction MLP Norm | Loss Function | Contrastive | Performance [^performance] |
 | ------------------ | ------------------- | ------------------- | ------------- | ----------- | ----------- |
 | Contrastive Loss   | None                | None                | Cross Entropy | Explicit    | 44.1        |
 | BYOL               | Batch Norm          | Batch Norm          | L2            | Implicit    | 57.7        |
@@ -151,6 +151,8 @@ Next, we wanted to know whether batch normalization is required in the projectio
 | Random             | —                   | —                   | —             | None        | 28.8        |
 
 To summarize the findings so far: in the absence of a contrastive loss function, the success of BYOL training hinges on something about a single batch normalization layer related to the activations from other inputs in the mini-batch.
+
+[^performance]: Linear evaluation accuracy on half of the STL10 test set, using the other half of the test set as training. We calculate the embeddings for the whole test set after each epoch and use an `sklearn` linear classifier to fit the data and calculate the accuracy.
 
 ### Why batch normalization is critical in BYOL: mode collapse
 
