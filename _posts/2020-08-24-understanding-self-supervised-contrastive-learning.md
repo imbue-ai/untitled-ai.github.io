@@ -15,7 +15,7 @@ author:
 Unlike prior work like SimCLR and MoCo, the recent paper [Bootstrap Your Own Latent](http://arxiv.org/abs/2006.07733) (BYOL) from [DeepMind](https://deepmind.com/) demonstrates a state of the art method for self-supervised learning of image representations without an explicitly contrastive loss function. This simplifies training by removing the need for negative examples in the loss function. We highlight two surprising findings from our work on reproducing BYOL: 
 
 
-**(1) BYOL generally performs no better than random when batch normalization is removed, and** 
+**(1) BYOL often performs no better than random when batch normalization is removed, and** 
 
 **(2) the presence of batch normalization implicitly causes a form of contrastive learning**. 
 
