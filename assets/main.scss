@@ -450,7 +450,7 @@ p {
 
 // Sidebar menu
 .sidenav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
+  height: 1000px; /* Full-height: remove this if you want "auto" height */
   float: left;
   width: 180px; /* Set the width of the sidebar */
   position: absolute; /* Fixed Sidebar (stay in place on scroll) */
@@ -473,6 +473,14 @@ p {
   padding-bottom: 5px;
   display: block;
   font-weight: bold;
+}
+
+.sidenav-projects {
+  padding-left: 5px;
+  font-size: 14px;
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .sidenav-text {

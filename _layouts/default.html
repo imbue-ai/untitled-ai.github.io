@@ -15,8 +15,17 @@
           
           <div class="sidenav-links">
             <a href="/" class="sidenav-menu-item">Posts</a>
-            <a href="#" class="sidenav-menu-item">Podcast: <br/> Generally Intelligent</a>
-            <a href="#" class="sidenav-menu-item">About us</a>
+            <a href="https://anchor.fm/untitled-ai" class="sidenav-menu-item">Podcast: <br/> Generally Intelligent</a>
+            <a href="{{ 'about.html' | relative_url }}" class="sidenav-menu-item">About us</a>
+            <a href="https://github.com/untitled-ai" class="sidenav-menu-item">Github</a>
+            
+            <div class="sidenav-projects">
+              <a href="https://github.com/untitled-ai/self_supervised">self_supervised</a>: a Pytorch-Lightning implementation of self-supervised algorithms
+            </div>
+
+            <div class="sidenav-projects">
+              <a href="https://github.com/untitled-ai/jupyter_ascending">jupyter_ascending</a>: real-time Pycharm + Jupyter notebook sync
+            </div>
 
             <hr>
 
@@ -24,7 +33,8 @@
               We are investigating the fundamentals of learning across humans and machines.
             </div>
             <div class="sidenav-text">
-              If you'd like to stay up to date, follow <a href="https://twitter.com/ai_untitled">@ai_untitled on Twitter</a>.
+              If you'd like to stay up to date, follow <a href="https://twitter.com/ai_untitled">@ai_untitled on Twitter</a> 
+              or subscribe to the <a href="{{ 'feed.xml' | relative_url }}">RSS feed</a>.
             </div>
           </div>
         </div>
