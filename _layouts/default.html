@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper" style="position: relative">
+
+        <div class="sidenav">
+          <a href="/">
+            <img src="{{ 'assets/img/logo_black_transparent.png' | relative_url }}" alt="Logo" style="padding-top: 10px" />
+          </a>
+          
+          <div class="sidenav-links">
+            <a href="/" class="sidenav-menu-item">Posts</a>
+            <a href="#" class="sidenav-menu-item">Podcast: <br/> Generally Intelligent</a>
+            <a href="#" class="sidenav-menu-item">About us</a>
+
+            <hr>
+
+            <div class="sidenav-text">
+              We are investigating the fundamentals of learning across humans and machines.
+            </div>
+            <div class="sidenav-text">
+              If you'd like to stay up to date, follow <a href="https://twitter.com/ai_untitled">@ai_untitled on Twitter</a>.
+            </div>
+          </div>
+        </div>
+
+        {{ content }}
+
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

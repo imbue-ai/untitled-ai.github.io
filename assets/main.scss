@@ -6,12 +6,12 @@
 @charset "utf-8";
 
 
-$base-font-size:   16px !default;
+$base-font-size:   17px !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 
 $spacing-unit:     30px !default;
 
-$grey-color:       #828282 !default;
+$grey-color:       #929292 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
@@ -53,9 +53,9 @@ $text-color:            #111111 !default;
 $background-color:      #fdfdfd !default;
 $code-background-color: #faf9f9 !default;
 
-$link-base-color:       #2a7ae2 !default;
+$link-base-color:       #257dc5 !default;
 $link-visited-color:    $link-base-color !default;
-$link-hover-color:      lighten($text-color, 40%) !default;
+$link-hover-color:      darken($link-base-color, 25%) !default;
 
 $border-color-01:       $brand-color-light !default;
 $border-color-02:       lighten($brand-color, 35%) !default;
@@ -175,6 +175,7 @@ code {
   background-color: $code-background-color;
 }
 
+/*
 @media (prefers-color-scheme: dark) {
   code {
     color: $dark-text-color;
@@ -249,7 +250,7 @@ code {
     background-color: $dark-code-background-color;
   }
 }
-
+*/
 
 
 body {
@@ -260,6 +261,42 @@ body {
   line-height: $base-line-height;
 }
 
+hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-top: 1px solid #eee;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgb(238, 238, 238);
+  border-bottom: 1px solid #fff;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(255, 255, 255);
+}
+
+html {
+  font-size: $base-font-size;
+}
+
+b,
+strong {
+  font-weight: $base-font-weight-bold;
+}
+
+h1 {
+  line-height: 1.2;
+  text-rendering: optimizeLegibility;
+  font-size: 30px;
+  margin-top: 30px;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  text-rendering: optimizeLegibility;
+}
 
 .site-title {
   font-family: $title-font;
@@ -272,23 +309,18 @@ body {
   }
 }
 
-html {
-  font-size: $base-font-size;
+.post-link {
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: bold;
 }
 
-b,
-strong {
-  font-weight: $base-font-weight-bold;
+.post-meta {
+  font-size: 17px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1.5;
-  text-rendering: optimizeLegibility;
+.post-title {
+  line-height: 1.2;
 }
 
 .post-content h1 {
@@ -298,7 +330,7 @@ h6 {
 }
 
 .post-content h2 {
-  font-size: $base-font-size * 1.5;
+  font-size: 28px;
   font-weight: 400;
 }
 
@@ -310,12 +342,12 @@ h6 {
 }
 
 .post-content h4 {
-  font-size: $base-font-size * 1.1;
+  font-size: $base-font-size * 1.2;
   font-weight: 500;
 }
 
 .post-content h5 {
-  font-size: $base-font-size * 1.17;
+  font-size: $base-font-size * 1.1;
   font-weight: 500;
 }
 
@@ -324,7 +356,6 @@ h6 {
 }
 
 .post-content p {
-  font-size: 17px;
   line-height: 1.8;
 }
 
@@ -413,12 +444,52 @@ p {
   }
 }
 
+#share-buttons {
+  color: $grey-color;
+}
 
+// Sidebar menu
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  float: left;
+  width: 180px; /* Set the width of the sidebar */
+  position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: -260px;
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+.sidenav-links {
+  margin-top: 30px;
+  padding-left: 15px;
+}
+
+/* The navigation menu links */
+.sidenav-menu-item {  
+  text-decoration: none;
+  font-size: 17px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: block;
+  font-weight: bold;
+}
+
+.sidenav-text {
+  margin-top: 20px; 
+  font-size: 14px;
+  display: block;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav a {font-size: 17px;}
+}
 
 
 /**
  * Dark styling
- */
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: $dark-background-color;
@@ -493,4 +564,4 @@ p {
         }
     }
 }
-
+*/
