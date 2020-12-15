@@ -10,11 +10,9 @@ author:
 - <a href="https://twitter.com/kanjun">Kanjun Qiu </a> (<a href="mailto:kanjun@sourceress.com">email</a>)
 ---
 
-Over the past few years, we’ve gotten to take part in eye-opening conversations about how machine learning research actually works. These conversations have proved critical to our own research: exposing us to new ideas, helping us form fruitful partnerships, and providing us much-needed feedback on our own work.
+Over the past few years, we’ve been a part of countless eye-opening conversations with a variety of deep learning researchers about how they actually do their work. These conversations have proved critical to our own research: exposing us to new ideas, helping us form fruitful partnerships, and providing us much-needed feedback on our own work.
 
-Often, these conversations happen as part of informal paper reading groups, lab meetings, or casual chats with friends. The intimacy and informality of these environments lends itself to stimulating conversations. Yet, at times, something has felt off. 
-
-It often felt wasteful that the hard-learned lessons, practical advice, and informative stories of research failures are shared with just a select few, when there are so many others who would not only benefit, but also use these conversations to advance the frontier.
+These conversations happen as part of informal paper reading groups, lab meetings, or casual chats with friends. The intimacy and informality of these environments lends itself to stimulating conversations. Yet it often felt wasteful that the hard-learned lessons, practical advice, and informative stories of research failures are shared with just a select few, when there are so many others who would not only benefit, but also use these conversations to advance the frontier.
 
 **That’s why, today, we’re launching, “Generally Intelligent,” a publicly available podcast by machine learning researchers, for machine learning researchers.**
 

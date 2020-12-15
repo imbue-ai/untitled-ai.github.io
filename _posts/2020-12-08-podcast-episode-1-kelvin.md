@@ -10,7 +10,7 @@ author:
 - <a href="https://twitter.com/kanjun">Kanjun Qiu </a> (<a href="mailto:kanjun@sourceress.com">email</a>)
 ---
 
-As we outlined in our earlier post, we're starting a podcast for machine learning researchers.
+As we outlined [in our earlier post](/podcast-episode-0-intro.html), we're starting a podcast for machine learning researchers.
 
 Our first guest is our good friend Kelvin Guu, a researcher at Google Brain and the creator of REALM. The conversation is a wide-ranging tour of language models, how computers interact with world knowledge, and much more. 
 

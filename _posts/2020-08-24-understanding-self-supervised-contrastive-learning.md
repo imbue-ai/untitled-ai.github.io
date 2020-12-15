@@ -222,7 +222,7 @@ Given the rapid pace of progress in the field of self-supervised learning right 
 
 Thanks to our team members Bryden Fogelman, Timothy Devries, Hristijan Bogoevski, Bartosz Wróblewski, Jason Benn, Ali Rhode, and Kanjun Qiu for their feedback and comments. We also appreciate our friends Christina Kim, Benjamin Mann, Lisa Fetterman, William Levine, Andrey Zhmoginov, Chris Painter, Ian Thompson, Sarah Hong, Jeremie Harris, Vincent Chen, and Tom Brown who gave very helpful feedback. Finally, we are very grateful to the BYOL authors for reading this and giving us the opportunity to understand their algorithm better.
 
-# <a href="https://untitled-ai.github.io/appendix-for-understanding-self-supervised-contrastive-learning.html">Appendix</a>
+# <a href="/appendix-for-understanding-self-supervised-contrastive-learning.html">Appendix</a>
 For more details and data on our experiments, see the appendix to this post at the link above.
 
 # Footnotes
