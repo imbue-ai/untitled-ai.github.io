@@ -12,12 +12,14 @@ author:
 
 As we outlined [in our earlier post](/podcast-episode-0-intro.html), we're starting a podcast for machine learning researchers.
 
-Our first guest is our good friend Kelvin Guu, a researcher at Google Brain and the creator of REALM. The conversation is a wide-ranging tour of language models, how computers interact with world knowledge, and much more. 
+Our first guest is Kelvin Guu, a researcher at Google AI and the creator of [REALM: Retrieval-Augmented Language Model Pretraining](https://ai.googleblog.com/2020/08/realm-integrating-retrieval-into.html). The conversation is a wide-ranging tour of language models, how computers interact with world knowledge, and much more. 
 
 Here are just a few of the questions we cover:
-- Why might cross entropy not be such a great objective function?
-- How can you store knowledge in a database, in the weights of a model, or a with mix of both approaches?
-- What are some interesting problems and data sets that have been overlooked by the research community?
-- Where do we expect language and knowledge models to go in the future?
+- Why cross-entropy might not be such a great objective function
+- Why language models like GPT-3 seem to generalize so well to tasks beyond just predicting words
+- How you can store knowledge in a database, in the weights of a model, or a with mix of both approaches
+- What interesting problems and data sets have been overlooked by the research community
+- Creative and impactful ways language and knowledge models might be used in the future  
 
-Check it out here, and let us know what you think!
+
+Check it out [here](https://open.spotify.com/episode/7sFhwPJ14XcwkF73LfF1n5), and let us know what you think!
