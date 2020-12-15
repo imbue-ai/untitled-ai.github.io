@@ -23,8 +23,11 @@ Machine Learning Engineer | [Github](https://github.com/brydenfogelman) | [Linke
 ### **Hristijan Bogoevski**
 Machine Learning Engineer | [Github](https://github.com/birbbit)
 
-### Jason Benn, Machine Learning Engineer
+### **Jason Benn**
+Machine Learning Engineer | [Github](https://github.com/JasonBenn) | [Twitter](https://twitter.com/jasoncbenn?lang=en) | [Website](https://jasonbenn.com/) | [LinkedIn](https://www.linkedin.com/in/bennjason/)
 
-### Josh Albrecht, CTO
+### **Josh Albrecht**
+CTO | [Github](https://github.com/joshalbrecht) | [Website](http://joshalbrecht.com/) | [Twitter](https://twitter.com/joshalbrecht)
 
-### Kanjun Qiu, CEO
+### **Kanjun Qiu**
+CEO | [Github](https://github.com/kanjun) | [Twitter](https://twitter.com/kanjun) | [LinkedIn](https://www.linkedin.com/in/kanjun/)
