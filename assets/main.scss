@@ -18,10 +18,10 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 $table-text-align: left !default;
 
 // Width of the content area
-$content-width:    800px !default;
+$content-width:    850px !default;
 
 $on-palm:          600px !default;
-$on-laptop:        800px !default;
+$on-laptop:        850px !default;
 
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
@@ -298,17 +298,6 @@ h6 {
   text-rendering: optimizeLegibility;
 }
 
-.site-title {
-  font-family: $title-font;
-  text-decoration: line-through;
-  letter-spacing: 0.05em;
-  &,
-  &:visited,
-  &:hover {
-    text-decoration: line-through;
-  }
-}
-
 .post-link {
   font-size: 34px;
   line-height: 1.2;
@@ -369,26 +358,24 @@ a {
   text-decoration: none;
   color: $link-base-color;
   &,
-  &:visited,
-  &:hover {
-    text-decoration: none;
-  }
-
-  &,
   &:visited {
     color: $link-visited-color;
+    text-decoration: none;
   }
   &:hover {
+    text-decoration: underline;
     color: $link-hover-color
   }
 }
 
 p {
   a {
-    text-decoration: underline;
+    text-decoration: none;
     color: $link-base-color;
     &,
-    &:visited,
+    &:visited {
+      text-decoration: none;
+    }
     &:hover {
       text-decoration: underline;
     }
@@ -445,7 +432,7 @@ p {
 }
 
 #share-buttons {
-  color: $grey-color;
+  color: silver;
 }
 
 // Sidebar menu
@@ -492,6 +479,11 @@ p {
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav a {font-size: 17px;}
+}
+
+#podcast-embed {
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 

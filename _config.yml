@@ -21,7 +21,7 @@
 title: Untitled AI
 # email: 
 description: >- # this means to ignore newlines until "baseurl:"
-  Investigating the fundamentals of learning
+  Investigating the fundamentals of learning across humans and machines
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
