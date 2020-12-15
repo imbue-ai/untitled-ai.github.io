@@ -17,10 +17,11 @@ Chief of Staff | [Twitter](https://twitter.com/RohdeAli) | [LinkedIn](https://ww
 ### **Bartosz Wroblewski**
 Machine Learning Engineer | [Github](https://github.com/bawr)
 
-### Bryden Fogelman
+### **Bryden Fogelman**
 Machine Learning Engineer | [Github](https://github.com/brydenfogelman) | [LinkedIn](https://www.linkedin.com/in/brydenfogelman/)
 
-### Hristijan Bogoevski, Machine Learning Engineer
+### **Hristijan Bogoevski**
+Machine Learning Engineer | [Github](https://github.com/birbbit)
 
 ### Jason Benn, Machine Learning Engineer
 
