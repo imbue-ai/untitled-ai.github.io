@@ -21,7 +21,7 @@
 title: Untitled AI
 # email: 
 description: >- # this means to ignore newlines until "baseurl:"
-  A blog about insights in ML, Python, and more! 
+  Investigating the fundamnetals of learning
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
