@@ -15,16 +15,16 @@ Lead Research Scientist | [Github](https://github.com/abefetterman) | [LinkedIn]
 Chief of Staff | [Twitter](https://twitter.com/RohdeAli) | [LinkedIn](https://www.linkedin.com/in/ali-rohde-90719970/)
 
 ### **Bartosz Wroblewski**
-Machine Learning Engineer | [Github](https://github.com/bawr)
+Machine Learning Researcher | [Github](https://github.com/bawr)
 
 ### **Bryden Fogelman**
-Machine Learning Engineer | [Github](https://github.com/brydenfogelman) | [LinkedIn](https://www.linkedin.com/in/brydenfogelman/)
+Machine Learning Researcher | [Github](https://github.com/brydenfogelman) | [Website](https://www.brydenfogelman.com/) | [Twitter](https://twitter.com/BrydenFogelman) | [LinkedIn](https://www.linkedin.com/in/brydenfogelman/)
 
 ### **Hristijan Bogoevski**
-Machine Learning Engineer | [Github](https://github.com/birbbit)
+Machine Learning Researcher | [Github](https://github.com/birbbit)
 
 ### **Jason Benn**
-Machine Learning Engineer | [Github](https://github.com/JasonBenn) | [Twitter](https://twitter.com/jasoncbenn?lang=en) | [Website](https://jasonbenn.com/) | [LinkedIn](https://www.linkedin.com/in/bennjason/)
+Machine Learning Researcher | [Github](https://github.com/JasonBenn) | [Twitter](https://twitter.com/jasoncbenn?lang=en) | [Website](https://jasonbenn.com/) | [LinkedIn](https://www.linkedin.com/in/bennjason/)
 
 ### **Josh Albrecht**
 CTO | [Github](https://github.com/joshalbrecht) | [Website](http://joshalbrecht.com/) | [Twitter](https://twitter.com/joshalbrecht)
