@@ -7,27 +7,25 @@ tags: podcast
 
 author: 
 - <a href="http://joshalbrecht.com/">Josh Albrecht</a> (<a href="mailto:joshalbrecht@gmail.com">email</a>)
-- <a href="https://twitter.com/kanjun">Kanjun Qiu </a> (<a href="mailto:kanjun@sourceress.com">email</a>)
+- <a href="https://twitter.com/kanjun">Kanjun Qiu </a>
 ---
 
-Over the past few years, we’ve been a part of countless eye-opening conversations with a variety of deep learning researchers about how they actually do their work. These conversations have proved critical to our own research: exposing us to new ideas, helping us form fruitful partnerships, and providing us much-needed feedback on our own work.
+Over the past few years, we’ve been a part of countless conversations with various deep learning researchers about the hunches and processes that inform their work. These conversations happen as part of informal paper reading groups, lab discussions, or casual chats with friends, and they have proved critical to our own research.
 
-These conversations happen as part of informal paper reading groups, lab meetings, or casual chats with friends. The intimacy and informality of these environments lends itself to stimulating conversations. Yet it often felt wasteful that the hard-learned lessons, practical advice, and informative stories of research failures are shared with just a select few, when there are so many others who would not only benefit, but also use these conversations to advance the frontier.
+The intimacy and informality of these environments lends itself to stimulating conversations. Yet it often felt like a shame that the deeper understandings and hard-earned lessons from research failures were shared with just a select few, when so many others could use this knowledge to advance the frontier. 
 
-**That’s why, today, we’re launching, “Generally Intelligent,” a publicly available podcast by machine learning researchers, for machine learning researchers.**
+**That’s why, today, we’re launching, “Generally Intelligent,” a publicly available podcast made by deep learning researchers, for deep learning researchers.**
 
 <!--more-->
 
-In launching this project, we’re working to open up the conversation, to expand access to the field of machine learning and expand each researcher’s community beyond just those from their own lab or school. 
+In launching this project, we want to open up private conversations and delve deeper than would be possible in a normal paper or talk -- not just into the ideas, opinions, and intuitions behind the work of our favorite researchers, but also their research process itself. 
 
-We’re also working to delve deeper than would be possible in a normal talk, not just into the ideas, opinions, and intuitions behind the work of our favorite researchers, but also their research process itself. 
+Parts of these conversations will get pretty in the weeds. But we are doing this intentionally -- having a large, general audience is an explicit non-goal for us, and we’d rather assume some background knowledge in order to unlock deeper insights for researchers.
 
-As a result, parts of these conversations will get pretty in the weeds. But we are doing this intentionally -- we’d rather focus on creating something great for researchers than optimize for a large audience.
+Our hope is that other researchers can gain both tactical advice and inspiration from these conversations, and that we can collectively help the field gain a deeper understanding of the fundamental nature of learning and intelligence.
 
-Our hope is that other researchers can gain both tactical advice and inspiration from these conversations, and we can collectively help the field gain a deeper understanding of the fundamental nature of knowledge and learning.
+We chose the name "Generally Intelligent" as a reminder that we all make mistakes, and that in the research process, those mistakes should be celebrated. We care deeply about learning and growing and understanding, and while the topic can be serious, we want to remember to stay humble and joyful in our pursuit of knowledge. 
 
-We chose the name "Generally Intelligent" as a reminder that we all make mistakes, and that in the research process, those mistakes should be celebrated. We care about learning and growing and understanding, and while the topic can be serious, we think it's important to stay humble and joyful in our pursuit of knowledge. 
+We hope you'll join us on this journey to understand the nature of learning and intelligence, and that you enjoy listening to these episodes as much as we've enjoyed creating them!
 
-We hope you'll join us on this journey and enjoy listening to these episodes as much as we've enjoyed creating them!
-
-Check out our first episode and subscribe here: (LINK)
+You can check out our first episode [here](https://open.spotify.com/show/1hikWa5LWDQJwXtz5LoeVn), and follow [@ai_untitled on Twitter](https://twitter.com/ai_untitled) or subscribe to the <a href="{{ 'feed.xml' | relative_url }}">RSS feed</a> to get notified of future ones.
