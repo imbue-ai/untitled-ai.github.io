@@ -14,7 +14,7 @@ Over the past few years, we’ve been a part of countless conversations with var
 
 The intimacy and informality of these environments lends itself to stimulating conversations. Yet it often felt like a shame that the deeper understandings and hard-earned lessons from research failures were shared with just a select few, when so many others could use this knowledge to advance the frontier. 
 
-**That’s why, today, we’re launching, “Generally Intelligent,” a publicly available podcast made by deep learning researchers, for deep learning researchers.**
+**That’s why, today, we’re launching “Generally Intelligent,” a publicly available podcast made by deep learning researchers, for deep learning researchers.**
 
 <!--more-->
 

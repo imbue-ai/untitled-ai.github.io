@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Generally Intelligent #1: Kelvin Guu, Google AI"
-date:   2020-12-08 09:00:00 -0700
+date:   2020-12-16 09:00:00 -0700
 category: machine-learning
 tags: podcast 
 
@@ -16,18 +16,18 @@ Generally Intelligent is a podcast made for deep learning researchers (you can l
 
 <iframe id="podcast-embed" src="https://anchor.fm/untitled-ai/embed/episodes/Episode-01-Kelvin-Guu--Google-AI-enqrq5" width="100%" frameborder="0" scrolling="no"></iframe>
 
-Our first guest is Kelvin Guu, a senior research scientist at Google AI, where he develops new methods for machine learning and language understanding. Kelvin is the creator of [REALM: Retrieval-Augmented Language Model Pretraining](https://ai.googleblog.com/2020/08/realm-integrating-retrieval-into.html). The conversation is a wide-ranging tour of language models, how computers interact with world knowledge, and much more; here are a few of the questions we cover:
+Our first guest is [Kelvin Guu](https://www.kelvinguu.com/), a senior research scientist at Google AI, where he develops new methods for machine learning and language understanding. Kelvin is the co-author of [REALM: Retrieval-Augmented Language Model Pretraining](https://ai.googleblog.com/2020/08/realm-integrating-retrieval-into.html). The conversation is a wide-ranging tour of language models, how computers interact with world knowledge, and much more; here are a few of the questions we cover:
 - Why language models like GPT-3 seem to generalize so well to tasks beyond just predicting words
 - How you can store knowledge in a database, in the weights of a model, or a with mix of both approaches
 - What interesting problems and data sets have been overlooked by the research community
 - Why cross-entropy might not be such a great objective function
 - Creative and impactful ways language and knowledge models might be used in the future  
 
-<!--more-->
-
 We love feedback, ideas, and questions, so please [feel free to reach out](https://twitter.com/kanjun)!
 
-*Here's the full transcript.*
+*Here's the full transcript.* 
+
+<!--more-->
 
 **Kanjun Qiu: [00:00:00]** Hey everyone. I'm Kanjun Qiu, and this is Josh Albrecht. We run Untitled AI, an independent research lab that's investigating the fundamentals of learning across both humans and machines in order to create more general intelligence. 
 
