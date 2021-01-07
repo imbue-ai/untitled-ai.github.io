@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Generally Intelligent #1: Kelvin Guu, Google AI"
+title:  "Generally Intelligent #1: Kelvin Guu, Google AI, on language models & overlooked problems"
 date:   2020-12-16 09:00:00 -0700
 category: machine-learning
 tags: podcast 
