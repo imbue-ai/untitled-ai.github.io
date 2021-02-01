@@ -28,4 +28,4 @@ We chose the name "Generally Intelligent" as a reminder that we all make mistake
 
 We hope you'll join us on this journey to understand the nature of learning and intelligence, and that you enjoy listening to these episodes as much as we've enjoyed creating them!
 
-You can check out our first episode [here](https://open.spotify.com/show/1hikWa5LWDQJwXtz5LoeVn), and follow [@ai_untitled on Twitter](https://twitter.com/ai_untitled) or subscribe to the <a href="{{ 'feed.xml' | relative_url }}">RSS feed</a> to get notified of future ones.
+You can check out our first episode [here](https://open.spotify.com/show/1hikWa5LWDQJwXtz5LoeVn), and follow [@genintelligent on Twitter](https://twitter.com/genintelligent) or subscribe to the <a href="{{ 'feed.xml' | relative_url }}">RSS feed</a> to get notified of future ones.
