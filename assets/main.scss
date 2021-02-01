@@ -294,14 +294,27 @@ strong {
 h1 {
   line-height: 1.2;
   text-rendering: optimizeLegibility;
-  font-size: 30px;
-  //margin-top: 30px;
+  font-size: 32px;
+  font-weight: 400;
 }
-h2,
-h3,
-h4,
-h5,
+h2 {
+  font-size: 28px;
+  font-weight: 400;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+h4 {
+  font-size: $base-font-size * 1.2;
+  font-weight: 500;
+}
+h5 {
+  font-size: $base-font-size * 1.1;
+  font-weight: 500;
+}
 h6 {
+  font-size: $base-font-size;
   line-height: 1.2;
   text-rendering: optimizeLegibility;
 }

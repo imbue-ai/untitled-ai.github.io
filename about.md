@@ -3,11 +3,14 @@ layout: default
 ---
 
 # About us
-Hi there! We are Untitled AI, an independent research lab investigating the fundamentals of learning across both humans and machines, in order to create more capable and general machine intelligence.
+Hi there! Generally Intelligent is is an early-stage AI research company. We’re working directly on building human-level general machine intelligence that can learn naturally in the that way humans do. Our mission is to understand the fundamentals of learning and build safe, humane machine intelligence.
 
-Our research is primarily focused on self-supervised learning, especially as it relates to simulated worlds and computer vision problems. 
+We’re supported by investors that include Y Combinator, former researchers from OpenAI, the founders of Dropbox, Lightspeed Venture Partners, and Threshold Ventures (formerly DFJ). 
+
+**We're hiring!** If you're excited about the prospect of working directly on safe human-level intelligence, take a look at our [jobs page]() and drop us a note at [jobs@generallyintelligent.ai](mailto:jobs@generallyintelligent.ai).
 
 # Our team
+
 ### **Kanjun Qiu**
 CEO | [Github](https://github.com/kanjun) | [Twitter](https://twitter.com/kanjun) | [LinkedIn](https://www.linkedin.com/in/kanjun/)
 
