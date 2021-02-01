@@ -3,7 +3,7 @@ layout: default
 ---
 
 # About us
-Hi there! We are Untitled AI, an independent research lab investigating the fundamentals of learning across both humans and machines, in order to create more capable and general machine intelligence.
+Hi there! We are Generally Intelligent, an independent research lab investigating the fundamentals of learning across both humans and machines, in order to create more capable and general machine intelligence.
 
 Our research is primarily focused on self-supervised learning, especially as it relates to simulated worlds and computer vision problems. 
 

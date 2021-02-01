@@ -29,7 +29,7 @@ We love feedback, ideas, and questions, so please [feel free to reach out](https
 
 <!--more-->
 
-**Kanjun Qiu: [00:00:00]** Hey everyone. I'm Kanjun Qiu, and this is Josh Albrecht. We run Untitled AI, an independent research lab that's investigating the fundamentals of learning across both humans and machines in order to create more general intelligence. 
+**Kanjun Qiu: [00:00:00]** Hey everyone. I'm Kanjun Qiu, and this is Josh Albrecht. We run Generally Intelligent, an independent research lab that's investigating the fundamentals of learning across both humans and machines in order to create more general intelligence. 
 
 And you're listening to Generally Intelligent, a series of conversations with deep learning researchers about the ideas, opinions, and intuitions behind their papers and talks. We hope this ultimately becomes a global colloquium where we can make guest speakers available to everyone, not just people inside their own lab.
 
