@@ -23,9 +23,9 @@ Our first guest is [Kelvin Guu](https://www.kelvinguu.com/), a senior research s
 - Why cross-entropy might not be such a great objective function
 - Creative and impactful ways language and knowledge models might be used in the future  
 
-We love feedback, ideas, and questions, so please [feel free to reach out](https://twitter.com/kanjun)!
+<br /> 
 
-*Here's the full transcript.* 
+*Below is the full transcript. We love feedback, ideas, and questions, so please [feel free to reach out](https://twitter.com/kanjun)!* 
 
 <!--more-->
 

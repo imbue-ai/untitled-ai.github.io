@@ -7,7 +7,8 @@ Hi there! Generally Intelligent is is an early-stage AI research company. We’r
 
 We’re supported by investors that include Y Combinator, former researchers from OpenAI, the founders of Dropbox, Lightspeed Venture Partners, and Threshold Ventures (formerly DFJ). 
 
-**We're hiring!** If you're excited about the prospect of working directly on safe human-level intelligence, take a look at our [jobs page]() and drop us a note at [jobs@generallyintelligent.ai](mailto:jobs@generallyintelligent.ai).
+**We're hiring!** If you're excited about the prospect of working directly on safe human-level intelligence, take a look at our [jobs page](https://www.notion.so/Generally-Intelligent-Job-Board-62b9247c778447989ec8006951843ce8) and drop us a note at [jobs@generallyintelligent.ai](mailto:jobs@generallyintelligent.ai).
+
 
 # Our team
 

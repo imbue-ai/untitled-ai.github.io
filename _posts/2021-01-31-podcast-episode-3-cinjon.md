@@ -12,28 +12,19 @@ author:
 
 **[RSS](https://anchor.fm/s/42cab330/podcast/rss)** · **[Spotify](https://open.spotify.com/show/1hikWa5LWDQJwXtz5LoeVn)** · **[Apple Podcasts](https://podcasts.apple.com/us/podcast/generally-intelligent/id1544921720)** · **[Pocket Casts](https://pca.st/ewh266dr)** 
 
-<iframe id="podcast-embed" src="https://anchor.fm/untitled-ai/embed/episodes/Episode-02-Sarah-Jane-Hong--Latent-Space--on-neural-rendering--research-process-eol1vq" width="100%" frameborder="0" scrolling="no"></iframe>
+<iframe id="podcast-embed" src="https://anchor.fm/untitled-ai/embed/episodes/Episode-03-Cinjon-Resnick--NYU--on-activity-and-scene-understanding-epq426/a-a4h1dtu" width="100%" frameborder="0" scrolling="no"></iframe>
 
-We just interviewed [Cinjon Resnick](), formerly from Google Brain and now doing his PhD at NYU, about his evolution as a researcher, including:
-    - How Cinjon started his research by focusing on the intersection of language and games, before running into a wall with this approach
-    - How spending time at circuses 🎪 and with gymnasts 🤸🏽‍♂️ re-invigorated his research, and convinced him to focus on video, motion, and activity recognition
-    - How this experience led to his paper, “Probing the State of the Art: A Critical Look at Visual Representation Evaluation” and his current focus on “understanding scenes”
-    
-This time we’re featuring [Sarah Jane Hong](https://twitter.com/latentcodes?lang=en), co-founder of Latent Space, a startup building the first fully AI-rendered 3D engine in order to democratize creativity.
+On this episode of Generally Intelligent, we interview [Cinjon Resnick](http://www.cinjon.com/) ([Google Scholar](https://scholar.google.com/citations?hl=en&user=TkTkctcAAAAJ&view_op=list_works&sortby=pubdate)), formerly from Google Brain and now doing his PhD at NYU, about why he believes scene understanding is critical to out of distribution generalization, and how his theses have evolved since he started his PhD.
 
-Sarah co-authored [Low Distortion Block-Resampling with Spatially Stochastic Networks](https://arxiv.org/abs/2006.05394) from NeurIPS 2020, a very cool method that lets you realistically resample part of a generated image. For example, maybe you've generated a castle, but you'd like to change the style of a tower - you could then resample that tower until you get something you like.
+Some topics we over:
+- How Cinjon started his research by trying to grow a baby through language and games, before running into a wall with this approach
+- How spending time at circuses 🎪 and with gymnasts 🤸🏽‍♂️ re-invigorated his research, and convinced him to focus on video, motion, and activity recognition
+- Why MetaSIM and MetaSIM II are underrated papers
+- Two research ideas Cinjon would like to see others work on
 
-In this episode, we touch on:
+<br />
 
-- What it was like taking classes under Geoff Hinton in 2013
-- How not to read papers
-- The downsides of only storing information in model weights
-- Why using natural language prompts to render a scene is much harder than you’d expect
-- Why a model’s ability to scale is more important than getting state-of-the-art results
-
-As always, please [feel free to reach out](https://twitter.com/kanjun) with feedback, ideas, and questions!
-
-*Here's the full transcript.*
+*Below is the full transcript. As always, please [feel free to reach out](https://twitter.com/kanjun) with feedback, ideas, and questions!*
 
 <!--more-->
 

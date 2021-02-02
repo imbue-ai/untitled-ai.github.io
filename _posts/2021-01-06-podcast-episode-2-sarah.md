@@ -26,9 +26,9 @@ In this episode, we touch on:
 - Why using natural language prompts to render a scene is much harder than you’d expect
 - Why a model’s ability to scale is more important than getting state-of-the-art results
 
-As always, please [feel free to reach out](https://twitter.com/kanjun) with feedback, ideas, and questions!
+<br />
 
-*Here's the full transcript.*
+*Below is the full transcript. As always, please [feel free to reach out](https://twitter.com/kanjun) with feedback, ideas, and questions!*
 
 <!--more-->
 
