@@ -23,12 +23,12 @@ A few of the topics we touch on in this episode:
 
 - How discovering novelty search totally changed Joel’s philosophy of life
 - Sometimes, can you reach your objective more quickly by not trying to reach it?
-- How one might evolve intelligence
+- Better ways to evolve intelligence
 - Why reinforcement learning is a natural framework for open-endedness
 
 <br />
 
-**Select highlights:**
+**Some quotes we loved:**
 
 > Novelty search is a way of looking at the question of how ambitious objectives are reached: how do you accomplish ambitious things?
 

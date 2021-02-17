@@ -287,6 +287,14 @@ hr {
       margin-bottom: 40px;
     }
 
+blockquote {
+  color: $grey-color-dark;
+  font-size: $small-font-size;
+  font-style: normal;
+  letter-spacing: -0.5px;
+  border-left: 4px solid #e8e8e8;
+}
+
 html {
   font-size: $base-font-size;
 }

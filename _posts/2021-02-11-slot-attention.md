@@ -9,46 +9,51 @@ author:
 - <a href="https://brydenfogelman.com/">Bryden Fogelman</a> (<a href="mailto:bryden1995@gmail.com">email</a>)
 ---
 
-TL;DR: We’re open sourcing a PyTorch Implementation of one of our favorite papers ([Object-Centric Learning with Slot Attention](https://arxiv.org/abs/2006.15055)) from [NeurIPS 2020](https://neurips.cc/). 
+**TL;DR:** We’re open sourcing a PyTorch implementation of [Object-Centric Learning with Slot Attention](https://arxiv.org/abs/2006.15055), one of our favorite papers from [NeurIPS 2020](https://neurips.cc/).
 
 
-You can checkout our implementation at [https://github.com/untitled-ai/slot_attention](https://github.com/untitled-ai/slot_attention).
+Check out our implementation at [https://github.com/untitled-ai/slot_attention](https://github.com/untitled-ai/slot_attention).
+
+Also, we’re hiring! You can find our job postings [here](https://generally-intelligent.breezy.hr/), and email us at <a href="mailto:jobs@generallyintelligent.ai">jobs@generallyintelligent.ai</a> if you find a role for you.
 
 {% include image.html 
 url="/assets/img/slot_attention/slot_attention_results.png" 
-alt="Slot Attention" 
-caption="Outputs of our slot attention model. This image demonstrates the models ability to divide objects (or parts of objects) into slots."
+alt="Slot Attention Outputs" 
+caption="Outputs of our slot attention model, demonstrating the model's ability to divide objects, or parts of objects, into slots."
+class="large-image"
 %}
 
 <!--more-->
 
 ### Why we chose this paper:
 
-As a human looking at the image above, we can almost immediately pick out the separate objects in the image. By contrast, 
-machine learning models have a surprisingly difficult time understanding which pixels constitute “an object” by human standards. 
-While there has been a lot of success in training supervised models to complete this task [^1], 
-it’s largely unsolved with unsupervised models [^2]. To solve complex tasks that humans can do, it’s 
-important that our models actually <i>understand</i> what objects are.
+Here’s a question for you, intelligent reader: how many distinct objects do you see in the upper-left image?
 
-One of the most interesting things about Object-Centric Learning with Slot Attention is that it introduces a novel way to 
-decouple objects from the original input without any training or supervision, as shown by the results in figure X. The model 
-does this by forcing “slots” to compete over different features of the original image. The mechanism used to enable this 
-competition is similar to the attention mechanism popular in other domains of machine learning [^3]. It’s exciting 
-that unsupervised models can now determine objects from complex scenes, and can even do so without using depth, motion, 
-or other helpful signals.
+This is not a hard question for us humans. However, unsupervised machine learning models have a surprisingly difficult time answering this: they struggle to understand which pixels constitute an object by human standards. And while there's been success in training supervised models to complete this task [^1], it’s largely unsolved on the unsupervised side [^2].
+
+You can see the issue here. It's important that machines actually <i>understand</i> what objects are, because countless elementary tasks that humans can do require this basic capability.
+
+Enter Object-Centric Learning with Slot Attention. This nifty technique introduces a novel way to extract objects from the original input without any training or supervision. After an image is processed (for example, through a CNN) into feature representations, a Slot Attention module forces "slots" to compete over these features, using an iterative attention mechanism similar to the attention mechanism popular in other domains of machine learning [^3]. At each iteration, slots compete to explain parts of input features, and then update their representation.
+
+{% include image.html 
+url="/assets/img/slot_attention/slot-attention-figure-3.png" 
+alt="Figure 3 from Slot Attention paper" 
+caption="Figure 3 in the paper visualizes the attention masks at each iteration, illustrating how each slot's representation updates after each iteration."
+class="med-image"
+%}
+
+It’s exciting that unsupervised models can now determine objects from complex scenes, and can even do so without using depth, motion, or other helpful signals.
 
 ### What’s next?
 
-While slot attention is a step in the right direction, there are plenty of interesting open questions. Can this work on real 
-data and not toy datasets? What if we had determined objects in an image based on what they’re doing (ie. moving vs static)? 
-Instead of reconstruction loss, could we use a contrastive loss instead (checkout this related work by [Sindy Löwe](https://loewex.github.io/) [here](https://arxiv.org/pdf/2011.10287.pdf))?
+While slot attention is a step in the right direction toward unsupervised object understanding, there are plenty of interesting open questions:
+- How can this work on real data with many objects and noisy backgrounds?
+- What if we had determined objects in an image based on what they’re doing (i.e. moving vs static)? 
+- Instead of reconstruction loss, what would happen if we use a contrastive loss instead? (See [this related work](https://arxiv.org/pdf/2011.10287.pdf) by [Sindy Löwe](https://loewex.github.io/))
 
-By reimplementing this paper and sharing our code, we hope we can allow others to help answers these questions and more. 
-Note: we weren’t able to full reproduce the result of the paper due to time and GPU constraints, so drop a ticket on our Github 
-page if you have any issues. If you have thoughts on the model, where you think it’d be useful, etc., 
-please shoot us a note at <a href="mailto:josh@generallyintelligent.ai">josh@generallyintelligent.ai</a>, we’d love to chat!
+By reimplementing this paper and sharing our code, we hope we can allow others to help answer these questions, and more. 
 
-PS we’re hiring. Checkout out our job postings here or hit us up at <a href="mailto:jobs@generallyintelligent.ai">jobs@generallyintelligent.ai</a>.
+**Note:** We did not fully reproduce the result of the paper due to time and GPU constraints, so drop a ticket on our Github page if you have any issues. If you have thoughts on the model, where you think it’d be useful, etc., please shoot us a note at <a href="mailto:josh@generallyintelligent.ai">josh@generallyintelligent.ai</a>. We're happy to chat!
 
 ### Sources
 
