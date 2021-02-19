@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A PyTorch Implementation of Slot Attention"
-date:   2021-02-11 09:00:00 -0700
+date:   2021-02-23 09:00:00 -0700
 category: machine-learning
 tags: unsupervised machine-learning open-source  
 
@@ -48,7 +48,7 @@ It’s exciting that unsupervised models can now determine objects from complex 
 
 While slot attention is a step in the right direction toward unsupervised object understanding, there are plenty of interesting open questions:
 - How can this work on real data with many objects and noisy backgrounds?
-- What if we had determined objects in an image based on what they’re doing (i.e. moving vs static)? 
+- Our team works heavily with video and objects in motion. How well would it work if we determined objects in an image based on what they're doing - for example, whether they're moving, or static?
 - Instead of reconstruction loss, what would happen if we use a contrastive loss instead? (See [this related work](https://arxiv.org/pdf/2011.10287.pdf) by [Sindy Löwe](https://loewex.github.io/))
 
 By reimplementing this paper and sharing our code, we hope we can allow others to help answer these questions, and more. 
