@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A PyTorch Implementation of Slot Attention"
-date:   2021-02-23 09:00:00 -0700
+date:   2021-02-25 09:00:00 -0700
 category: machine-learning
 tags: unsupervised machine-learning open-source  
 

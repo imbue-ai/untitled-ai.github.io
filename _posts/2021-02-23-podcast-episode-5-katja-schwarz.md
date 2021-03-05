@@ -25,7 +25,7 @@ We discuss the ideas in Katja’s work and more:
 
 〰 continuous functions as representations for 3D objects
 
-**Some quotes we loved:**
+### Some quotes we loved
 
 > If you can generate something or if you can create something yourself like a prototype, it's nice because you can see as a program of what your model learned from the data. And on the other hand, if you reconstruct, it's way harder to see if there's a true understanding, or if it's just rapid juicing things. I guess why I favor this GAN approach because I feel that there's a lot of potential also for robustness. It's closer to this understanding. We humans can also think of different versions. 
 
