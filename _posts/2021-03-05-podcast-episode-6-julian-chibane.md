@@ -13,7 +13,7 @@ author:
 
 **[RSS](https://anchor.fm/s/42cab330/podcast/rss)** · **[Spotify](https://open.spotify.com/show/1hikWa5LWDQJwXtz5LoeVn)** · **[Apple Podcasts](https://podcasts.apple.com/us/podcast/generally-intelligent/id1544921720)** · **[Pocket Casts](https://pca.st/ewh266dr)** 
 
-<iframe id="podcast-embed" src="https://anchor.fm/untitled-ai/episodes/Episode-06-Julian-Chibane--MPI-INF--on-3D-reconstruction-using-implicit-functions-ermvhn/a-a4r8nbr" width="100%" frameborder="0" scrolling="no"></iframe>
+<iframe id="podcast-embed" src="https://anchor.fm/untitled-ai/embed/episodes/Episode-06-Julian-Chibane--MPI-INF--on-3D-reconstruction-using-implicit-functions-ermvhn" width="100%" frameborder="0" scrolling="no"></iframe>
 
 Our next guest, [Julian Chibane](http://virtualhumans.mpi-inf.mpg.de/people/Chibane.html), is a PhD student at the Real Virtual Humans group at the Max Planck Institute for Informatics in Germany.
 
