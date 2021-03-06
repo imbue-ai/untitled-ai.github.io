@@ -17,7 +17,7 @@ author:
 
 Our next guest, [Julian Chibane](http://virtualhumans.mpi-inf.mpg.de/people/Chibane.html), is a PhD student at the Real Virtual Humans group at the Max Planck Institute for Informatics in Germany.
 
-His recent work centers around intrinsic functions for 3D reconstruction, and his most recent paper at NeurIPS is [Neural Unsigned Distance Fields for Implicit Function Learning](http://virtualhumans.mpi-inf.mpg.de/ndf/). He also introduced Implicit Feature Networks (IF-Nets) in [Implicit Functions in Feature Space for 3D Shape Reconstruction and Completion](https://openaccess.thecvf.com/content_CVPR_2020/papers/Chibane_Implicit_Functions_in_Feature_Space_for_3D_Shape_Reconstruction_and_CVPR_2020_paper.pdf). Julian is open to collaborators interested in similar work, so feel free to reach out! 
+His recent work centers around implicit functions for 3D reconstruction, and his most recent paper at NeurIPS is [Neural Unsigned Distance Fields for Implicit Function Learning](http://virtualhumans.mpi-inf.mpg.de/ndf/). He also introduced Implicit Feature Networks (IF-Nets) in [Implicit Functions in Feature Space for 3D Shape Reconstruction and Completion](https://openaccess.thecvf.com/content_CVPR_2020/papers/Chibane_Implicit_Functions_in_Feature_Space_for_3D_Shape_Reconstruction_and_CVPR_2020_paper.pdf). Julian is open to collaborators interested in similar work, so feel free to reach out! 
 
 <div class="parent">
 <div class="column" style="flex: 1.71">
