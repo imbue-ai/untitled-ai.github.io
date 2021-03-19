@@ -36,7 +36,7 @@ class="large-image"
 {% include image.html 
 url="/assets/img/podcast/yujia-huang-adversarial-robustness.png" 
 alt="Results of CNN-F on adversarial robustness" 
-caption="CNN-F-5 drastically improves adversarial robustness of CNNs."
+caption="CNN-F-5 improves adversarial robustness of CNNs."
 class="large-image"
 %}
 </div>
@@ -44,11 +44,11 @@ class="large-image"
 
 **Highlights from our conversation:**
 
-🏗 How recurrent generative feedback, a neuro-inspired design, improves adversarial robustness and and can be more efficient (less labels)
+🏗 How recurrent generative feedback, a neuro-inspired design, improves adversarial robustness and achieves similar performance with fewer labels
 
-🧠 Adapting theories from neuroscience and classical research for machine learning
+🧠 Drawing inspiration from classical ML & neuroscience for new deep learning models
 
-📊 What a new Turing test for “less artificial” or generalized AI could look like
+📊 What a new Turing test for “less artificial” AI could look like
 
 💡 Tips for new machine learning researchers! 
 
