@@ -13,7 +13,7 @@ author:
 
 **[RSS](https://anchor.fm/s/42cab330/podcast/rss)** · **[Spotify](https://open.spotify.com/show/1hikWa5LWDQJwXtz5LoeVn)** · **[Apple Podcasts](https://podcasts.apple.com/us/podcast/generally-intelligent/id1544921720)** · **[Pocket Casts](https://pca.st/ewh266dr)** 
 
-<iframe src="https://anchor.fm/untitled-ai/embed/episodes/Episode-8-Giancarlo-Kerg--Mila--on-approaching-deep-learning-from-mathematical-foundations-etk3ep" width="100%" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://anchor.fm/untitled-ai/embed/episodes/Episode-08-Giancarlo-Kerg--Mila--on-approaching-deep-learning-from-mathematical-foundations-etk3ep" width="100%" frameborder="0" scrolling="no"></iframe>
 
 <br>
 
