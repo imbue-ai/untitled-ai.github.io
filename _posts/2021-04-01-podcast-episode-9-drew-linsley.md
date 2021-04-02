@@ -8,7 +8,6 @@ tags: podcast
 author: 
 - <a href="https://twitter.com/kanjun">Kanjun Qiu </a>
 - <a href="http://joshalbrecht.com/">Josh Albrecht</a> (<a href="mailto:joshalbrecht@gmail.com">email</a>)
-- <a href="https://twitter.com/lukelivesfree"> edited by Luke Cheng </a>
 
 ---
 
@@ -115,8 +114,8 @@ Lastly, Drew is looking to work with collaborators in robotics, so feel free to 
 * Which of Drew’s work might be overlooked? (2019 ICLR paper -  [Learning what and where to attend](https://arxiv.org/abs/1805.08819) ) [59:34]
 * Emergent and bi-stable images, potential useful biases for machine vision [1:03:56]
 * More of, what might be holding the field back? (getting the right benchmarks) [1:06:32]
-
-
 <br>
 
-*The full transcript is coming. As always, please [feel free to reach out](https://twitter.com/kanjun) with feedback, ideas, and questions!*
+*The full transcript is coming. As always, please [feel free to reach out](https://twitter.com/kanjun) with feedback, ideas, and questions!*  
+
+*Thanks to <a href="https://twitter.com/lukelivesfree"> Luke Cheng </a> for writing drafts of this post.*
