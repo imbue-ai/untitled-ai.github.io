@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Generally Intelligent #9: Drew Linsely, Brown, on combining human visual biases and computer vision"
+title:  "Generally Intelligent #9: Drew Linsley, Brown, on inductive biases for vision and generalization"
 date:   2021-04-01 09:00:00 -0700
 category: machine-learning
 tags: podcast 
@@ -14,11 +14,11 @@ author:
 
 **[RSS](https://anchor.fm/s/42cab330/podcast/rss)** · **[Spotify](https://open.spotify.com/show/1hikWa5LWDQJwXtz5LoeVn)** · **[Apple Podcasts](https://podcasts.apple.com/us/podcast/generally-intelligent/id1544921720)** · **[Pocket Casts](https://pca.st/ewh266dr)** 
 
-<iframe src="https://anchor.fm/untitled-ai/embed/episodes/Episode-9-Drew-Linsely--Brown--on-combining-human-visual-biases-and-computer-vision-eu2cm2" width="100%" frameborder="0" scrolling="no"></iframe>>
+<iframe src="https://anchor.fm/untitled-ai/embed/episodes/Episode-9-Drew-Linsley--Brown--on-combining-human-visual-biases-and-computer-vision-eu2cm2" width="100%" frameborder="0" scrolling="no"></iframe>>
 
 <br>
 
-Drew Linsely [(Google Scholar)](https://scholar.google.com/citations?user=cXZlAuQAAAAJ&hl=en) [(Website)](https://sites.brown.edu/drewlinsley/) is a Paul J. Salem senior research associate at Brown, advised by Thomas Serre. He is working on building computational models of the visual system that serve the dual purpose of (1) explaining biological function and (2) extending artificial vision. Prior to his work in the Serre lab, he completed a PhD in computational neuroscience at Boston College and a BA in Psychology at Hamilton College.
+Drew Linsley [(Google Scholar)](https://scholar.google.com/citations?user=cXZlAuQAAAAJ&hl=en) [(Website)](https://sites.brown.edu/drewlinsley/) is a Paul J. Salem senior research associate at Brown, advised by Thomas Serre. He is working on building computational models of the visual system that serve the dual purpose of (1) explaining biological function and (2) extending artificial vision. Prior to his work in the Serre lab, he completed a PhD in computational neuroscience at Boston College and a BA in Psychology at Hamilton College.
 
 His most recent paper at NeurIPS is [Stable and expressive recurrent vision models](https://serre-lab.github.io/crbpsite/).  It presents an alternative to back-propagation through time (BPTT) for recurrent vision models called "contractor recurrent back-propagation" (C-RBP), which has O(1) complexity for an N step model vs. O(N) for BPTT, and which learns long-range spatial dependencies in cases where BPTT cannot.  
 
