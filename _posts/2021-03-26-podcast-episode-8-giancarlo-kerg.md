@@ -94,9 +94,12 @@ His most recent paper at NeurIPS is [Untangling tradeoffs between recurrence and
 
 *Below is the full transcript. As always, please [feel free to reach out](https://twitter.com/kanjun) with feedback, ideas, and questions!*
 
+*Thanks to <a href="https://twitter.com/lukelivesfree">Luke Cheng </a> for writing drafts of this post and <a href="https://www.linkedin.com/in/tessajhall/">Tessa Hall</a> for editing the episode.* 
+
 <!--more-->
 
 <br>
+
 **Giancarlo Kerg:**
 Humans, the obvious sparse attention, we can remember things from childhood. How are we able to do so? How are we able to do credit assignment of extremely long timescales? So we must have sparse attention into the past or something like that. We found a way to basically use those theorems and develop a screening mechanism where we basically go from a quadratic computational complexity of self-attention into linear computational complexity, where we consider a fixed time horizon, where we compute some type of relevancy score for a given state and then we decide by a simple heuristic whether we should keep this state and memory or not. But over a very fixed time horizon. In hindsight, it actually resembles the process of memory consolidation, which is the transfer of memory tokens from short-term to long-term memory, and then the short time where we computed this relevancy score is actually analogy to the short-term memory basically. And then the long memory is what we store to thing in. It gives us a little bit like an intuitive analogy to what the brain is doing.
 
