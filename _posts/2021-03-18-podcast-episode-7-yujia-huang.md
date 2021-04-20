@@ -53,6 +53,9 @@ class="large-image"
 💡 Tips for new machine learning researchers! 
 
 <br>
+*Below are the show notes and full transcript. As always, please [feel free to reach out](https://twitter.com/kanjun) with feedback, ideas, and questions!*
+<!--more-->
+<br />
 
 ### Some quotes we loved
 > **[04:19] Generative classifiers needing less labels than discriminative ones:**
@@ -79,7 +82,6 @@ class="large-image"
 <br>
 
 ### Show Notes
-
 * Yujia on how she came up with her idea for Recurrent Generative Feedback for CNNs [00:00]
 * Intro [00:46]
 * Yujia’s path to machine learning [1:46] 
@@ -109,12 +111,7 @@ class="large-image"
 
 <br>
 
-*Below is the full transcript. As always, please [feel free to reach out](https://twitter.com/kanjun) with feedback, ideas, and questions!*
-
-<!--more-->
-
-<br>
-
+### Transcript
 **Yujia Huang:**
 So I was thinking, imagine you see some blurry thing, it's a cat. So if you see some blurry thing, you will have some guess, its probably a cat, but how can you verify whether that's a cat or not? What would be the thinking process? So you generate something from the label of a cat in your mind and you try to match the generated image with the external input.
 
@@ -671,3 +668,4 @@ Okay. Thank you.
 **Kanjun Qiu:**
 Thank you for listening to Generally Intelligent. We love feedback and questions. So please feel free to ping us on Twitter at heart Kanjun and at Josh Albrecht, or email us with any ideas or corrections. If you enjoyed this podcast, please share it with fellow researchers, rate it on iTunes and follow us on Spotify, or your favorite podcast app. Thanks very much, and we'll see you next time.
 
+*Thanks to <a href="https://twitter.com/lukelivesfree">Luke Cheng </a> for writing drafts of this post and <a href="https://www.linkedin.com/in/tessajhall/">Tessa Hall</a> for editing the podcast.*

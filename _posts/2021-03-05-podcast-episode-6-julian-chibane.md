@@ -38,7 +38,7 @@ class="med-image"
 </div>
 </div>
 
-Highlights from our conversation:
+**Highlights from our conversation:**
 
 🖼 How, surprisingly, the IF-Net architecture learned reasonable representations of humans & objects without priors
 
@@ -46,6 +46,10 @@ Highlights from our conversation:
 
 📚 Navigating open questions in 3D representation, and the importance of focusing on what's working
 
+<br>
+*Below is the full transcript. As always, please [feel free to reach out](https://twitter.com/kanjun) with feedback, ideas, and questions!*
+<!--more-->
+<br />
 
 ### Some quotes we loved
 > **[08:34] What surprised him while working on IF-Nets:**
@@ -68,13 +72,9 @@ In research, if you already know that everything is working beforehand, then it'
 I really tend to like small steps in research better than having highly engineered big architectures that solve one task very well, where it's not really interpretable where this is coming from. 
 I think that's why NeRF is so popular, because it has a very simple representation. It uses stuff that's absolutely clear to readers, for example a fully connected network. Also, including volumetric rendering, which is known—they take key things that are known, but do something very important and helpful with it. It's very clear why it's working and why it's not working, instead of sometimes you have papers solving some task but they have four different networks in there, that do not have any real names, they're just doing something not interpretable.
 
-*Below is the full transcript. As always, please [feel free to reach out](https://twitter.com/kanjun) with feedback, ideas, and questions!*
-
-<!--more-->
-
 <br>
 
-
+### Transcript
 **Kanjun Qiu:**
 Julian is a PhD student at the Real Virtual Humans group at the Max Planck Institute for Informatics in Germany. His recent work centers around intrinsic functions for 3D reconstruction and his most recent paper at NeuroCS is called Neural Unsigned Distance Fields for Implicit Function Learning.
 

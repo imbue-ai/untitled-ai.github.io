@@ -18,7 +18,7 @@ Excited to release our second episode of Generally Intelligent! This time we’r
 
 Sarah co-authored [Low Distortion Block-Resampling with Spatially Stochastic Networks](https://arxiv.org/abs/2006.05394) from NeurIPS 2020, a very cool method that lets you realistically resample part of a generated image. For example, maybe you've generated a castle, but you'd like to change the style of a tower - you could then resample that tower until you get something you like.
 
-In this episode, we touch on:
+**Highlights from our conversation:**
 
 - What it was like taking classes under Geoff Hinton in 2013
 - How not to read papers
@@ -26,12 +26,12 @@ In this episode, we touch on:
 - Why using natural language prompts to render a scene is much harder than you’d expect
 - Why a model’s ability to scale is more important than getting state-of-the-art results
 
+<br>
+*Below is the full transcript. As always, please [feel free to reach out](https://twitter.com/kanjun) with feedback, ideas, and questions!*
+<!--more-->
 <br />
 
-*Below is the full transcript. As always, please [feel free to reach out](https://twitter.com/kanjun) with feedback, ideas, and questions!*
-
-<!--more-->
-
+### Transcript
 **Kanjun Qiu (00:33):**
 Sarah is one of the co-founders of Latent Space, which is a startup that is building a deep learning rendered 3D engine in order to democratize creativity. Sarah's recent paper at NeurlPS 2020 is called Low Distortion Block-Resampling with Spatially Stochastic Networks. This is a method that allows you to realistically regenerate part of an image, which is actually really cool.
 

@@ -32,6 +32,9 @@ His most recent paper at NeurIPS is [Untangling tradeoffs between recurrence and
 🏛 Working at Mila with Yoshua Bengio and other collaborators
 
 <br>
+*Below are the show notes and full transcript. As always, please [feel free to reach out](https://twitter.com/kanjun) with feedback, ideas, and questions!*
+<!--more-->
+<br />
 
 ### Some quotes we loved
 > **[06:03] Benefits of mathematical rigor in deep learning:**
@@ -61,7 +64,6 @@ His most recent paper at NeurIPS is [Untangling tradeoffs between recurrence and
 <br>
 
 ### Show Notes
-
 * Giancarlo on the relevancy screening mechanism in his paper, which resembles human memory consolidation [00:00]
 * Intro [01:00]
 * Giancarlo’s path from pure math to travel, startups, data analysis and machine learning [02:15]
@@ -92,14 +94,7 @@ His most recent paper at NeurIPS is [Untangling tradeoffs between recurrence and
 
 <br>
 
-*Below is the full transcript. As always, please [feel free to reach out](https://twitter.com/kanjun) with feedback, ideas, and questions!*
-
-*Thanks to <a href="https://twitter.com/lukelivesfree">Luke Cheng </a> for writing drafts of this post and <a href="https://www.linkedin.com/in/tessajhall/">Tessa Hall</a> for editing the episode.* 
-
-<!--more-->
-
-<br>
-
+### Transcript
 **Giancarlo Kerg:**
 Humans, the obvious sparse attention, we can remember things from childhood. How are we able to do so? How are we able to do credit assignment of extremely long timescales? So we must have sparse attention into the past or something like that. We found a way to basically use those theorems and develop a screening mechanism where we basically go from a quadratic computational complexity of self-attention into linear computational complexity, where we consider a fixed time horizon, where we compute some type of relevancy score for a given state and then we decide by a simple heuristic whether we should keep this state and memory or not. But over a very fixed time horizon. In hindsight, it actually resembles the process of memory consolidation, which is the transfer of memory tokens from short-term to long-term memory, and then the short time where we computed this relevancy score is actually analogy to the short-term memory basically. And then the long memory is what we store to thing in. It gives us a little bit like an intuitive analogy to what the brain is doing.
 
@@ -649,3 +644,4 @@ Yeah, well thanks for having me and I hope I could offer some info and interesti
 **Kanjun Qiu:**
 Thank you for listening to Generally Intelligent. We love feedback and questions. So please feel free to ping us on Twitter at @Kanjun and @JohnAlbrecht, or email us with any ideas or questions. If you enjoyed this podcast, please share it with fellow researchers, rate it on iTunes, and follow us on Spotify, or your favorite podcast app. Thanks very much and we'll see you next time.
 
+*Thanks to <a href="https://twitter.com/lukelivesfree">Luke Cheng </a> for writing drafts of this post and <a href="https://www.linkedin.com/in/tessajhall/">Tessa Hall</a> for editing the podcast.*

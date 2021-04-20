@@ -17,7 +17,7 @@ author:
 
 [Katja Schwartz](https://www.is.mpg.de/person/kaschwarz) ([Google Scholar](https://scholar.google.com/citations?user=mhOrpHIAAAAJ&hl=en)) came to machine learning from physics, and is now working on 3D geometric scene understanding at the Max Planck Institute for Intelligent Systems. Her most recent work, “[Generative Radiance Fields for 3D-Aware Image Synthesis](https://arxiv.org/abs/2007.02442),” revealed that radiance fields are a powerful representation for generative image synthesis, leading to 3D consistent models that render with high fidelity.
 
-We discuss the ideas in Katja’s work and more:
+**Highlights from our conversation:**
 
 🥦 the role 3D generation plays in conceptual understanding
 
@@ -25,18 +25,19 @@ We discuss the ideas in Katja’s work and more:
 
 〰 continuous functions as representations for 3D objects
 
-### Some quotes we loved
+<br>
+*Below is the full transcript. As always, please [feel free to reach out](https://twitter.com/kanjun) with feedback, ideas, and questions!*
+<!--more-->
+<br />
 
+### Some quotes we loved
 > If you can generate something or if you can create something yourself like a prototype, it's nice because you can see as a program of what your model learned from the data. And on the other hand, if you reconstruct, it's way harder to see if there's a true understanding, or if it's just rapid juicing things. I guess why I favor this GAN approach because I feel that there's a lot of potential also for robustness. It's closer to this understanding. We humans can also think of different versions. 
 
 > In our last project, we were actually thinking about using a VAE approach, just because of these nice stability properties. Then we decided against it because it meant that we would need to use posed images. Because if you want to reconstruct it, you need to know which pose it was taken from. And that's an advantage then again for GANs where you don't need to reconstruct exactly the same image.
 
-*Below is the full transcript. As always, please [feel free to reach out](https://twitter.com/kanjun) with feedback, ideas, and questions!*
-
-<!--more-->
-
 <br>
 
+### Transcript
 **Kanjun Qiu:**
 Katja came to machine learning from physics, and she's now doing 3D geometric scene understanding at the Max Planck Institute for Intelligent Systems in Germany. At this year's Merits, Katja presented her most recent work entitled GRAF: Generative Radiance Fields for 3D-Aware Image Synthesis. I encourage you to look at it because the visuals are beautiful and they simply can't be described in audio.
 

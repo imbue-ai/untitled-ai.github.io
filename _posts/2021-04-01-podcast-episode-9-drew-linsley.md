@@ -35,6 +35,9 @@ Lastly, Drew is looking to work with collaborators in robotics, so feel free to 
 🤖 Creating new benchmarks to move towards generalization
 
 <br>
+*Below are the show notes and full transcript. As always, please [feel free to reach out](https://twitter.com/kanjun) with feedback, ideas, and questions!*
+<!--more-->
+<br />
 
 ### Some quotes we loved
 > **[06:35] Drew’s work over the past five years:** 
@@ -83,7 +86,6 @@ Lastly, Drew is looking to work with collaborators in robotics, so feel free to 
 <br>
 
 ### Show Notes
-
 * Intro [01:22]
 * Drew Linsley’s work & upcoming workshop [02:09]
 * How Drew got into the field [02:42]
@@ -117,14 +119,7 @@ Lastly, Drew is looking to work with collaborators in robotics, so feel free to 
 
 <br>
 
-*Below is the full transcript. As always, please [feel free to reach out](https://twitter.com/kanjun) with feedback, ideas, and questions!*
-
-*Thanks to <a href="https://twitter.com/lukelivesfree">Luke Cheng </a> for writing drafts of this post and <a href="https://www.linkedin.com/in/tessajhall/">Tessa Hall</a> for editing the podcast.*
-
-<!--more-->
-
-<br>
-
+### Transcript
 **Drew Linsley:**
 And so, over the past five years, I think we've put together a pretty interesting theory through several papers on how understanding the brain and circuits in the brain specifically can help us build better artificial intelligence. And so the crux of this theory is that the biases in vision represent heuristics essentially, or shortcuts taken by the brain, which are shaped by the statistics of the visual world, of our visual surroundings.
 
@@ -821,4 +816,6 @@ Yeah. And if we can ever help, let us know, feel free to reach out.
 **Kanjun Qiu:**
 Thank you for listening to generally intelligent. We love feedback and questions. So please feel free to ping us on Twitter at, @kanjun and @joshalbrecht. Or email us with any ideas of corrections. If you enjoyed this podcast, please share it with fellow researchers, rate it on iTunes and follow us on Spotify or your favorite podcast app. Thanks very much. And we'll see you next time.
 
+<br>
 
+*Thanks to <a href="https://twitter.com/lukelivesfree">Luke Cheng </a> for writing drafts of this post and <a href="https://www.linkedin.com/in/tessajhall/">Tessa Hall</a> for editing the podcast.*

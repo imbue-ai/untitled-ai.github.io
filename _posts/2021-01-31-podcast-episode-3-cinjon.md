@@ -16,18 +16,19 @@ author:
 
 On this episode of Generally Intelligent, we interview [Cinjon Resnick](http://www.cinjon.com/) ([Google Scholar](https://scholar.google.com/citations?hl=en&user=TkTkctcAAAAJ&view_op=list_works&sortby=pubdate)), formerly from Google Brain and now doing his PhD at NYU, about why he believes scene understanding is critical to out of distribution generalization, and how his theses have evolved since he started his PhD.
 
-Some topics we over:
+**Highlights from our conversation:**
+
 - How Cinjon started his research by trying to grow a baby through language and games, before running into a wall with this approach
 - How spending time at circuses 🎪 and with gymnasts 🤸🏽‍♂️ re-invigorated his research, and convinced him to focus on video, motion, and activity recognition
 - Why MetaSIM and MetaSIM II are underrated papers
 - Two research ideas Cinjon would like to see others work on
 
+<br>
+*Below is the full transcript. As always, please [feel free to reach out](https://twitter.com/kanjun) with feedback, ideas, and questions!*
+<!--more-->
 <br />
 
-*Below is the full transcript. As always, please [feel free to reach out](https://twitter.com/kanjun) with feedback, ideas, and questions!*
-
-<!--more-->
-
+### Transcript
 **Kanjun (00:00:34):**
 Our guest today is Cinjon Resnick. Cinjon was a resident at Google Brain, and he did his undergrad at MIT before starting his PhD at NYU. He's published a wide variety of papers over the years from Generating Music to Language Learning and Game Theory to Self-supervised Learning and Vision.
 

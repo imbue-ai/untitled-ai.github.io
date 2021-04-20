@@ -19,17 +19,19 @@ Our fourth episode features [Joel Lehman](http://joellehman.com/) ([Google Schol
 
 Joel’s PhD dissertation introduced the novelty search algorithm. That work inspired him to write the popular science book, [“Why Greatness Cannot Be Planned”](https://www.amazon.com/Why-Greatness-Cannot-Planned-Objective/dp/3319155237), with his PhD advisor Ken Stanley, which discusses what evolutionary algorithms imply for how individuals and society should think about objectives.
 
-A few of the topics we touch on in this episode:
+**Highlights from our conversation:**
 
 - How discovering novelty search totally changed Joel’s philosophy of life
 - Sometimes, can you reach your objective more quickly by not trying to reach it?
 - Better ways to evolve intelligence
 - Why reinforcement learning is a natural framework for open-endedness
 
+<br>
+*Below is the full transcript. As always, please [feel free to reach out](https://twitter.com/kanjun) with feedback, ideas, and questions!*
+<!--more-->
 <br />
 
-**Some quotes we loved:**
-
+### Some quotes we loved:
 > Novelty search is a way of looking at the question of how ambitious objectives are reached: how do you accomplish ambitious things?
 
 > What novelty search did was ask a seemingly zen-like question, which is, "Sometimes, can you reach your objective more quickly by not trying to reach it?"
@@ -38,12 +40,9 @@ A few of the topics we touch on in this episode:
 
 > Imagine this SAT analogy problem, which is bird is to jet as evolution is to open-endedness. The idea is that birds' flight is really interesting, it shows it's possible to fly, and maybe we even tried to mimic that with ornithopter and those kinds of machines. But really, the history of flight took off when we had some hypothesis about the core principles of flight, that enabled us to engineer things that could more efficiently do things maybe that weren't even possible for biology. You can't create a bird that carries tons and tons of cargo across the ocean. Similarly, while we might take inspiration from biological evolution, what are the core principles of open-ended creativity? If you could bottle creativity into a jar, into an algorithm, that could efficiently instantiate an open-ended process that is aimed towards whatever domain we want, that could do so really efficiently and in a way that's not like biological evolution, but actually has capabilities that are much more impressive than biological evolution?
 
-*Below is the full transcript. As always, please [feel free to reach out](https://twitter.com/kanjun) with feedback, ideas, and questions!*
-
-<!--more-->
-
 <br>
 
+### Transcript
 **Kanjun Qiu:**
 Today we have with us Joel Lehman, who is currently a research scientist at OpenAI, but previously he was a founding member of Uber AI labs and an assistant professor at the IT University of Copenhagen. His research right now focuses on open-endedness, reinforcement learning and AI-safety. His Ph.D. dissertation actually introduced the novelty search algorithm, which is really interesting, and inspired him to write what is now a popular science book with his advisor, Ken Stanley, on what search algorithms imply for individuals and societal objectives. And it's called, Why Greatness Cannot Be Planned. You may have heard of it. The views expressed in this episode are Joel's views alone and they're not OpenAI's.
 
