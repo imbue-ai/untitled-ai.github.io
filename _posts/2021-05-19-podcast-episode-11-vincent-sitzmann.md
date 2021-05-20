@@ -49,7 +49,7 @@ class="large-image"
 🤖 “All computer vision should be 3D computer vision.  Our world is a 3d world.”
 
 <br>
-*The full transcript is coming soon. As always, please [feel free to reach out](https://twitter.com/kanjun) with feedback, ideas, and questions!*
+*The full transcript is coming soon. Below are the show notes. As always, please [feel free to reach out](https://twitter.com/kanjun) with feedback, ideas, and questions!*
 <!--more-->
 <br />
 
