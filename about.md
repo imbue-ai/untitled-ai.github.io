@@ -5,7 +5,7 @@ layout: default
 # About us
 Hi there! Generally Intelligent is is an early-stage AI research company. We’re working directly on building human-level general machine intelligence that can learn naturally in the that way humans do. Our mission is to understand the fundamentals of learning and build safe, humane machine intelligence.
 
-We’re supported by investors that include Y Combinator, former researchers from OpenAI, the founders of Dropbox, Lightspeed Venture Partners, and Threshold Ventures (formerly DFJ). 
+We have enough funding to last a very long time, supported by investors that include Y Combinator, former researchers from OpenAI, the founders of Dropbox, Lightspeed Venture Partners, and Threshold Ventures (formerly DFJ). 
 
 **We're hiring!** If you're excited about the prospect of working directly on safe human-level intelligence, take a look at our [jobs page](https://www.notion.so/Generally-Intelligent-Job-Board-62b9247c778447989ec8006951843ce8) and drop us a note at [jobs@generallyintelligent.ai](mailto:jobs@generallyintelligent.ai).
 
@@ -13,7 +13,7 @@ We’re supported by investors that include Y Combinator, former researchers fro
 # Our team
 
 ### **Kanjun Qiu**
-CEO | [Github](https://github.com/kanjun) | [Twitter](https://twitter.com/kanjun) | [LinkedIn](https://www.linkedin.com/in/kanjun/)
+CEO | [Website](https://kanjun.me) | [Twitter](https://twitter.com/kanjun) | [LinkedIn](https://www.linkedin.com/in/kanjun/)
 
 ### **Josh Albrecht**
 CTO | [Github](https://github.com/joshalbrecht) | [Website](http://joshalbrecht.com/) | [Twitter](https://twitter.com/joshalbrecht)
@@ -29,11 +29,5 @@ Machine Learning Researcher | [Github](https://github.com/bawr)
 
 ### **Bryden Fogelman**
 Machine Learning Researcher | [Github](https://github.com/brydenfogelman) | [Website](https://www.brydenfogelman.com/) | [Twitter](https://twitter.com/BrydenFogelman) | [LinkedIn](https://www.linkedin.com/in/brydenfogelman/)
-
-### **Hristijan Bogoevski**
-Machine Learning Researcher | [Github](https://github.com/birbbit)
-
-### **Jason Benn**
-Machine Learning Researcher | [Github](https://github.com/JasonBenn) | [Twitter](https://twitter.com/jasoncbenn?lang=en) | [Website](https://jasonbenn.com/) | [LinkedIn](https://www.linkedin.com/in/bennjason/)
 
 
