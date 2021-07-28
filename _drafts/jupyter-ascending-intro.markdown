@@ -42,16 +42,13 @@ was born.
 
 ## What is it?
 
+![Example](/assets/img/simple_jupyter_ascending.gif)
+
 Jupyter Ascending is a tool that enables you to edit Jupyter notebooks from your favorite code editor. You edit a normal python file, and Jupyter Ascending syncs the code into a Jupyter notebook. This allows you to keep everything you like about your editor/IDE, like keybindings, autocomplete, etc, while also being about to get the interactivity and visualization that Jupyter brings.
 
 We generally will put an editor side-by-side with the Jupyter notebook open in a browser (as shown in the GIF above). You'll create a `my_cool_script.sync.py` file which is paired with `my_cool_script.sync.ipynb`. You edit your code in the `.sync.py` file, using `# %%` to indicate breaks between notebook cells. The code auto-syncs into the notebook using a hook/plugin in your editor that sends the code to a plugin in the Jupyter server. You can also forward keyboard shortcuts from your editor for notebook commands like "run cell", "run all cells", etc. That way, you never have to leave your editor, but can see all the outputs in the notebook as you run cells.
 
 Because of the client-server architecture, you can also sync your code to a remote jupyter notebook. This lets you have all the power of a beefy dev-server with all the convenience of editing code locally.
-
-
-## Example Usage
-
-![Example](/assets/img/simple_jupyter_ascending.gif)
 
 We have example plugins or configuration instructions for using Jupyter Ascending in Visual Studio Code, PyCharm, and Vim,
 and adding other editor integrations is easy!
