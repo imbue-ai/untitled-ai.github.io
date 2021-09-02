@@ -3,11 +3,15 @@ layout: default
 ---
 
 # About us
-Hi there! Generally Intelligent is is an early-stage AI research company. We’re working directly on building human-level general machine intelligence that can learn naturally in the that way humans do. Our mission is to understand the fundamentals of learning and build safe, humane machine intelligence.
+Generally Intelligent is an AI research company. We help machines learn to understand the world the way humans do. Our mission is to build human-like general machine intelligence and make it safely accessible in order to foster a more abundant, equitable, and creative human society. 
 
-We have enough funding to last a very long time, supported by investors that include Y Combinator, former researchers from OpenAI, the founders of Dropbox, Lightspeed Venture Partners, and Threshold Ventures (formerly DFJ). 
+We take a first-principles approach to understanding the fundamentals of learning, starting with simple self-supervised networks solving early evolutionary problems, and increasing complexity incrementally. 
 
-**We're hiring!** If you're excited about the prospect of working directly on safe human-level intelligence, take a look at our [jobs page](https://www.notion.so/Generally-Intelligent-Job-Board-62b9247c778447989ec8006951843ce8) and drop us a note at [jobs@generallyintelligent.ai](mailto:jobs@generallyintelligent.ai).
+By "human-like", we refer to a system that can learn to solve similar problems to humans when trained on a similar amount & type of data to what humans need. We set this constraint because—by definition—an intelligent system that requires drastically more or different data would fail to do what humans can do today when there isn't enough of the right data.
+
+We have enough funding to last a very long time, supported by investors that include Y Combinator, researchers from OpenAI, Threshold Ventures (formerly DFJ), and a number of high profile individuals. 
+
+**We're hiring!** If you're excited about the prospect of working directly on safe human-level intelligence, take a look at our jobs page and drop us a note at [jobs@generallyintelligent.ai](mailto:jobs@generallyintelligent.ai).
 
 
 # Our team
