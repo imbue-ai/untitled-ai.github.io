@@ -28,9 +28,6 @@ Lead Research Scientist | [Github](https://github.com/abefetterman) | [LinkedIn]
 ### **Ali Rohde**
 Chief of Staff | [Twitter](https://twitter.com/RohdeAli) | [LinkedIn](https://www.linkedin.com/in/ali-rohde-90719970/)
 
-### **Bartosz Wroblewski**
-Machine Learning Researcher | [Github](https://github.com/bawr)
-
 ### **Bryden Fogelman**
 Machine Learning Researcher | [Github](https://github.com/brydenfogelman) | [Website](https://www.brydenfogelman.com/) | [Twitter](https://twitter.com/BrydenFogelman) | [LinkedIn](https://www.linkedin.com/in/brydenfogelman/)
 
